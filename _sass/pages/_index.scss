@@ -1,0 +1,115 @@
+ .jumbotron {
+	border-radius:0px !important;
+	margin-bottom:0px;
+	height:650px;
+}
+
+.hero-section {
+	
+	.bottom-overlay {
+		width:100%;
+		background:rgba(0,0,0, .5)
+	}
+
+	.jumbotron {
+	    background: url(http://www.tickettoentertainment.com/wp-content/uploads/2015/10/terror2.jpg) top right;
+    	background-size: cover;
+    	background-position-y: -130px;
+    	padding:170px 135px;
+    	height:940px;
+
+    	h1 {
+    		margin-bottom:60px;
+    		font-size:90px;
+    		line-height:100px;
+    		color:white;
+    		font-weight:bold;
+    	}
+	}
+}
+
+.sponsors-section {
+	padding:70px 0;
+	text-align:center;
+
+	h2 {
+		color:white;
+	}
+
+	ul {
+		margin:30px 0 20px;
+
+		.logo {
+			display:inline-block;
+		    margin-top: 0;
+		    width: auto;
+		    margin-right:60px;
+
+		    img {
+		    	-webkit-filter: grayscale(100%);
+	    		filter: grayscale(100%);
+	    		transition: all 0.5s;
+
+	    		&:hover {
+		    		-webkit-filter: grayscale(0%);
+	    			filter: grayscale(0%);
+		    	}
+		    }
+		}
+
+
+	}
+}
+
+.acttractions-section {
+	.jumbotron {
+		background: url(https://farm3.staticflickr.com/2466/3999603103_15c77b9e86_o.jpg) top right;
+    	background-size: cover;
+    	padding:100px 135px;
+    	height:725px;
+    	color:white;
+
+    	h2 {
+    		font-weight: 200;
+		    font-size: 48px;
+		    line-height: 55px;
+		    margin-bottom:30px;
+    	}
+
+    	p {
+    		margin-bottom:50px;
+    	}
+	}	
+}
+
+.sub-detail {
+	padding: 30px;
+    text-align: left;
+    min-height: 300px;
+    transition: all 1.1s;
+}
+
+footer {
+	.footer-detail {
+		padding: 30px;
+	    margin: 0;
+	    text-align: left;
+	    min-height: 180px;
+	    transition: all 0.5s;
+
+	    input {
+	        width: 400px !important;
+    		height: 50px;
+	    }
+	}
+
+	.map-image {
+    	background:#eee;
+    	height:300px;
+    }
+
+    .newsletter-signup {
+    	background:#bbb;
+    	height:300px;
+    }
+}
