@@ -117,3 +117,109 @@ hr {
       }
     }
 }
+
+@media screen and (max-width: 900px) {
+  .main-content-subpages {
+    .figcaption {
+      font-size:11px !important;
+      padding-top:0px !important;
+    }
+  }
+  
+  p {
+    font-size: 14px !important;
+  }
+
+  h2 {
+    font-size:20px !important;
+  }
+
+
+
+  
+  .container-fluid {
+    padding-right:0px !important;
+    padding-left:0px !important;
+    overflow-x:hidden;
+  }
+
+  .subpage-hero-details {
+    padding-right:20px !important;
+    padding-left:20px !important;
+    height:365px !important;
+  }
+
+  .subpage-hero-section {
+
+    h1 {
+      font-size:36px !important;
+    }
+  }
+  .padded-box {
+    padding-right:20px !important;
+    padding-left:20px !important;
+  }
+
+  .img-responsive {
+    margin-bottom:20px;
+  }
+
+  .search-page {
+    .list-item-detail {
+      h3 {
+        font-size:18px;
+      }
+
+      p {
+        font-size:14px;
+      }
+    }
+  }
+
+  .image-library-page {
+    .filter-row {
+      .btn-outline {
+        padding: 6px 12px !important;
+        margin-bottom: 0 !important;
+        font-size: 14px !important;
+        font-weight:400 !important;
+      }
+    }
+  }
+
+  .press-release-page {
+    .press-release-detail {
+      margin-bottom:10px;
+    }
+  }
+
+  .static-page {
+    h5 {
+      font-size:11px;
+    }
+  }
+
+  .audio-section {
+    padding:10px !important;
+  }
+  #audio-info {
+    h2 {
+      margin-top:10px;
+    }
+  }
+
+  #audio-container {
+    width: 65px !important;
+    height: 65px !important;
+    position: relative !important;
+    float: left !important;
+  }
+
+  .play-icon {
+    position: absolute !important;
+    left: 24px !important;
+    font-size: 20px !important;
+    top: 20px !important;
+
+  }
+}

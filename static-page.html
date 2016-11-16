@@ -96,7 +96,7 @@
     </header>
 
 
-    <main>
+    <main class="static-page">
 
 
         <div class="subpage-hero-section">
@@ -296,21 +296,39 @@
     <script src="./js/progressbar.js"></script>
 
     <script type="text/javascript">
+
+        var audio = document.getElementById('audio');
+        
         var audioProgressBar = new ProgressBar.Circle('#audio-container', {
           strokeWidth: 7,
-          color: '#FFEA82',
+          color: '#FF0000',
           trailColor: '#eee',
           trailWidth: 7
         });
 
         $(document).ready(function(){
-            var audio = document.getElementById('audio');
             audio.addEventListener('timeupdate', function() {
                 var percent = Math.floor((100 / audio.duration) * audio.currentTime);
                 audioProgressBar.animate(percent/100, function() {
 
                 });
             }, false);
+
+            $('.play-icon').click(function(){
+                var isPaused = $('a.play-icon i').hasClass('glyphicon-play');
+
+                if(isPaused) {
+                    $('a.play-icon i').removeClass('glyphicon-play');
+                    $('a.play-icon i').addClass('glyphicon-pause');
+
+                    audio.play();
+                } else {
+                    $('a.play-icon i').addClass('glyphicon-play');
+                    $('a.play-icon i').removeClass('glyphicon-pause');
+
+                    audio.pause();
+                }
+            });
         });
 
     </script>
