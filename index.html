@@ -18,12 +18,122 @@
 </head>
 <body>
 
-    
+    <div class="mobile-buy-now visible-xs">
+        <p class="text-center"><span class="glyphicon glyphicon-calendar"></span>  Buy Now & Save On Tickets!</p>
+    </div>
+
+    <div class="calendar-widget">
+       
+        <div class="close-icon">
+            <i class="glyphicon glyphicon-remove"></i>
+        </div>
+
+    </div>
+
+
+
+    <!-- menus here -->
+
+    <nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
+        <div class="mobile-menu-top">
+
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <h2>Visit</h2>
+                        <ul>
+                            <li><a href="javascript:void(0);">Schedule & Pricing </a></li>
+                            <li class="indent"><a href="javascript:void(0);">Group Rates</a></li>
+                            <li class="indent"><a href="javascript:void(0);">Ways to Save</a></li>
+                            <li><a href="javascript:void(0);">VIP Experiences</a></li>
+                            <li><a href="javascript:void(0);">Directions & Parking</a></li>
+                            <li><a href="javascript:void(0);">FAQ</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="menu-item">
+                        <h2>Preview</h2>
+                        <ul>
+                            <li><a href="javascript:void(0);">The Prison</a></li>
+                            <li><a href="javascript:void(0);">The Attraction</a></li>
+                            <li><a href="javascript:void(0);">Is ESP Haunted?</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="menu-item">
+                        <h2>Shop</h2>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="mobile-label-links">
+                <p>
+                    <a href="javascript: void(0);">Press Room</a>
+                </p>
+
+                <p>
+                    <a href="javascript: void(0);">Jobs</a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="mobile-buy-now-menu">
+            Buy Now & Save
+        </div>
+
+        <div class="mobile-menu-top">
+            <div class="address">
+                <address>
+                        2027 Fairmount Avenue <br />
+                        Philadelphia, PA 10130 <br />
+                        Phone: (215) 236-3300 <br />
+                </address>
+            </div>
+
+            <br style="clear:both;" />
+
+            <ul class="list-inline social-icons">
+
+                <li>
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                </li>
+
+                <li>
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                </li>
+
+                <li>
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div id="c-mask" class="c-mask"></div><!-- /c-mask -->
+
+    <div class="show-site-switcher">
+        <span class="glyphicon glyphicon-triangle-bottom"></span>
+    </div>
     <div class="site-switcher-section hidden-sm hidden-xs">
         <ul class="list-inline">
             <li>
                 <a href="javascript:void(0);" class="switch-caret">
-                    <span class="glyphicon glyphicon-triangle-top"></span>
+                    <span class="slide-up-menu glyphicon glyphicon-triangle-top"></span>
                 </a>
             </li>
 
@@ -43,7 +153,9 @@
 
 
     <header class="navbar">
-        <a class="navbar-logo" href="#">LOGO</a>
+        <a class="navbar-logo" href="#">
+            <img src="./assets/header-logo@2x.png.png">
+        </a>
 
         <div class="hours-section hidden-sm hidden-xs">
             <ul class="list-unstyled">
@@ -68,17 +180,53 @@
             <nav class="navbar navbar-inverse navbar-static-top navbar-lower">
               <div class="container-fluid">
 
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
+                <div id="o-wrapper" class="o-wrapper">
+                    <div class="c-buttons">
+                      
+                      <button id="c-button--slide-right" type="button" class="navbar-toggle collapsed" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+
+                    </div>
                 </div>
+                
 
                 <div class="collapse navbar-collapse navbar-right" id="navbar">
                   <ul class="nav navbar-nav">
-                    <li><a href="#">Visit</a>
+                    <li class="dropdown">
+                        <a  href="/what-it-is" 
+                            class="dropdown-toggle " 
+                            data-toggle="dropdown" 
+                            role="button" aria-haspopup="true" aria-expanded="false">
+
+                            Visit
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                          <li class="">
+                              <a href="javascript: void(0);">Schedule & Pricing</a>
+                          </li>
+                          
+                          <li class="indent">
+                              <a href="javascript: void(0);">Group Rates</a>
+                          </li>
+                          <li class="indent">
+                              <a href="javascript: void(0);">Ways to Save</a>
+                          </li>
+
+                          <li class="">
+                                  <a href="javascript: void(0);">VIP Experiences</a>
+                              </li>
+                          <li class="">
+                                  <a href="javascript: void(0);">Directions & Parking</a>
+                              </li>
+                          <li class="">
+                              <a href="javascript: void(0);">FAQ</a>
+                          </li>
+                      </ul>
+                    
                     </li>
                     <li><a href="#">Explore</a>
                     </li>
@@ -110,23 +258,30 @@
                             <h1>A Massive Haunted House Inside A Real Prison</h1>
 
                             <p>
-                                <a class="btn btn-red btn-lg btn-big" href="/dcpunk/timeline" role="button">
+                                <a class="btn btn-red btn-lg btn-big" href="javascriptL void(0);" role="button">
                                     Buy Now & Save
                                 </a>
-                                <a class="btn btn-white btn-lg btn-big" href="/dcpunk/timeline" role="button">
-                                    Watch The Preview
+                                <a class="btn btn-white btn-lg btn-big watch-preview" href="javascript: void(0);" role="button">
+                                   <span class="glyphicon glyphicon-play" style="display:inline-block; padding-right:10px;"></span> Watch The Preview
                                 </a>
                             </p>
 
                         </div>
-
-                        <!--<div class="bottom-overlay">
-                            <span class="text-center">
-                                "One of America's top haunted attractions."
-                            </span>
-                        </div>-->
                     </div>
 
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="mainpage-tagline">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="text-center">
+                            "One of America's top haunted attractions." 
+                        </span>
+                        <label>The Travel Channel</label>
+                    </div>
                 </div>
             </div>
         </div>
@@ -140,7 +295,7 @@
 
                             <div class="row">
 
-                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
 
                                     <h2>Six Attractions inside the Prison's Cellblocks</h2>
 
@@ -155,6 +310,31 @@
                                     </p>
                                 </div>
 
+                                <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+                                  <div id="prison-wrap">
+                                    <img id="prison-img" src="./assets/prison-gfx@2x.png.png" alt="Prison" />
+                                    
+                                    <a href="javascript:void(0);">
+                                        <span class="bubble detritus" style="top: 8%; left: 7%;"></span>
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                        <span class="bubble breakout" style="top: -11%; left: 32%;"></span>
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                        <span class="bubble infirmary" style="top: 14%; left: 37%;"></span>
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                        <span class="bubble quaratine" style="top: 40%; left: 17%;"></span>
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                        <span class="bubble lockdown" style="top: 57%; left: 48.5%;"></span>
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                        <span class="bubble machine-shop" style="top: 26%; left: 58%;"></span>
+                                    </a>
+                                  </div>
+                                </div>
+
                             </div>
 
                         </div>
@@ -164,38 +344,43 @@
             </div>
         </div>
 
-        <div class="index-details-section">
-            <div class="container-fluid">
-                <div class="row">
+        
 
-                    <div class="col-md-4 col-sm-4">
+        <div class="mainpage-details-section">
+            <div class="container-fluid">
+                <div class="row" style="margin:0;">
+                    <div class="col-md-4 vip-expriences">
                         <div class="sub-detail">
                             <h2>Upgrade Your Experience</h2>
 
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                                Upgrade your experience with one of these VIP packages, including Quick Pass and VIP tours. <span>Learn more</span>
                             </p>
                         </div>
+
+                        <div class="darken-overlay"></div>
                     </div>
 
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 frequent-questions">
                         <div class="sub-detail">
                             <h2>Some Other Headline</h2>
 
                             <p>
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                                Including where to park, when to arrive, what to expect, how to get a discount, and more. <span>Learn more</span>
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 favorite-frights">
                         <div class="sub-detail">
                             <h2>Our Favorite Frights</h2>
 
                             <p>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                                Take your TBTW experience up a notch with one of these VIP options, including Quick Pass and VIP Tours. <span>Learn more</span>
                             </p>
                         </div>
+
+                        <div class="darken-overlay"></div>
                     </div>
 
                 </div>
@@ -218,105 +403,171 @@
                     <div class="col-md-12">
                         <ul class="list-unstyled">
                             <li class="logo">
-                                <img src="http://vignette2.wikia.nocookie.net/logopedia/images/2/2d/Lukoil-logo-620x236.png/revision/latest?cb=20160304213348" width="150">
+                                <img src="./assets/sponsors/sponsor-barqs.png" width="100">
                             </li>
 
                             <li class="logo">
-                                <img src="https://s-media-cache-ak0.pinimg.com/originals/2c/c8/c8/2cc8c82af7fed60c6e3076aaafe236e6.jpg" width="80">
+                                <img src="./assets/sponsors/sponsor-fanta.png" width="100">
+                            </li>
+
+                            <li class="logo">
+                                <img src="./assets/sponsors/sponsor-coke.png" width="100">
+                            </li>
+
+                            <li class="logo">
+                                <img src="./assets/sponsors/sponsor-metro.png" width="100">
+                            </li>
+
+                            <li class="logo">
+                                <img src="./assets/sponsors/sponsor-panera.png" width="100">
+                            </li>
+
+                            <li class="logo">
+                                <img src="./assets/sponsors/sponsor-auntieannes.png" width="100">
+                            </li>
+
+                            <li class="logo">
+                                <img src="./assets/sponsors/sponsor-zipcar.png" width="100">
                             </li>
                         </ul>
                     </div>
 
                 </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="become-a-sponsor">
+                            Interested in <a href="javascript:void(0);">sponsorship or sampling opportunities?</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
+    </main>
 
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
 
-                    <div class="col-md-6 col-sm-12 map-image">
-                        <div class="footer-detail">
-                            <h3>Logo</h3>
+                <div class="col-md-6 col-sm-12 map-image">
+                    <div class="footer-detail">
+                        <img src="./assets/footer/footer-logo@2x.png.png" alt="Site Logo" title="Eastern State: Terror Behind The Walls" width="40%" />
 
-                            <p>
-                                <small>
-                                    Copyright 2016. Terror Behind the Walls. 
-                                    <br /> 
-                                    Eastern State Penitentiary Historic Site.
-                                </small>
-                            </p>
+                        <p>
+                            Copyright 2016. Terror Behind the Walls. 
+                            <br /> 
+                            Eastern State Penitentiary Historic Site.
+                        </p>
 
-                            <address>
-                                <small>
-                                    2027 Fairmount Avenue
-                                    Philadelphia, PA 10130
-                                    Phone: (215) 236-3300
-                                </small>
-                            </address>
-                        </div>
+                        <address>
+                                2027 Fairmount Avenue <br />
+                                Philadelphia, PA 10130 <br />
+                                Phone: (215) 236-3300 <br />
+                        </address>
                     </div>
+                </div>
 
-                    <div class="col-md-6 col-sm-12 newsletter-signup">
-                        <div class="footer-detail">
-                            <h2>Stay Connected!</h2>
+                <div class="col-md-6 col-sm-12 newsletter-signup">
+                    <div class="footer-detail">
+                        <h2>Stay Connected!</h2>
 
-                            <div class="form-area">
-                                <label for="subscribe">Subscribe For Our Newsletter</label>
-                                <form class="form-inline">
-                                  <div class="form-group">
-                                    
-                                    <div class="input-group">
-                                      <input type="email" class="form-control" id="subscribe">
-                                    </div>
-                                  </div>
-                                  <button type="submit" class="btn btn-white">Subscribe</button>
-                                </form>
-                            </div>
+                        <div class="form-area">
+                            <label for="subscribe">Subscribe For Our Newsletter</label>
+                            <form class="form-inline">
+                              <div class="form-group">
+                                
+                                <div class="input-group">
+                                  <input type="email" class="form-control" id="subscribe">
+                                </div>
+                              </div>
+                              <button type="submit" class="btn btn-white">Subscribe</button>
+                            </form>
+                        </div>
 
-                            <ul class="list-inline">
+                        <ul class="list-inline social-icons">
 
-                                <li>
+                            <li>
+                                <a href="https://www.facebook.com/TerrorAtESP">
                                     <span class="fa-stack fa-2x">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                                     </span>
-                                </li>
+                                </a>
+                            </li>
 
-                                <li>
+                            <li>
+                                <a href="https://twitter.com/TerrorAtESP">
                                     <span class="fa-stack fa-2x">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                                     </span>
-                                </li>
+                                </a>
+                            </li>
 
-                                <li>
+                            <li>
+                                <a href="https://www.instagram.com/terroratesp/">
                                     <span class="fa-stack fa-2x">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
                                     </span>
-                                </li>
+                                </a>
+                            </li>
 
-                                <li>
-                                    <span class="fa-stack fa-2x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </li>
-
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
-
                 </div>
+
             </div>
-        </footer>
+        </div>
+    </footer>
 
-    </main>
 
+    <!-- The Modal -->
+    <div id="Attraction-Modal" class="attraction-modal">
+
+      <!-- Modal content -->
+      <div class="attraction-modal-content">
+        <div class="attraction-modal-body text-center" style="margin-bottom:-5px;">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AdPvP2AL3Os" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="attraction-modal-footer">
+          <div class="attraction-image" style="width:200px; float:left;">
+            <img src="./assets/attractions/attraction-breakout@2x.jpg.jpg" style="width:100%;" />
+          </div>
+
+          <div class="attraction-description" >
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Excepteur sint occaecat cupidatat non proident, sunt in culpa. Do eiusmod. Exc amet,</p>
+          </div>
+
+          <br style="clear:both;" />
+        </div>
+      </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="Preview-Modal" class="attraction-modal">
+
+      <!-- Modal content -->
+      <div class="attraction-modal-content">
+        <div class="attraction-modal-body text-center" style="margin-bottom:-5px;">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AdPvP2AL3Os" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./dist/js/main.js"></script>
+    <script src="./js/classie.js"></script>
+    <script src="./js/main.js"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            
+        });
+    </script>
 </body>
 </html>

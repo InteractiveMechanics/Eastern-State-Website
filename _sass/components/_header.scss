@@ -1,5 +1,6 @@
 .navbar {
 	margin-bottom:0px;	
+	padding:10px 0;
 }
 
 .navigation-links-section {
@@ -13,6 +14,12 @@
 	padding-left:22px;
 	border-left:2px solid grey;
 	font-size:16px;
+
+	ul {
+		li {
+			color:#ccc;
+		}
+	}
 }
 
 .navbar-inverse {
@@ -31,6 +38,14 @@
 	}
 }
 
+.navbar-logo {
+	img {
+		height:90px;
+	}
+}
+
+
+
 .navbar-lower {
 	li {
 		a {
@@ -42,7 +57,72 @@
 				font-weight:400;
 			}
 		}
+
+		&:hover {
+			ul {
+				display:block;
+				padding:0px;
+				right: 0;
+                left: 0;
+                min-width:280px;
+                background-color:#4c545c;
+                padding:20px 15px;
+
+                li {
+                	a {
+                		font-size:16px;
+                		font-weight:normal;
+                		white-space: normal;
+                		padding: 10px 20px;
+                        overflow: hidden;
+                        color:#eeeeee;
+
+                        &:hover {
+                        	color:red;
+                        }
+                	}
+
+                	&.indent {
+                		padding-left:25px;
+                	}
+                }
+			}
+		}
 	}
+
+	> li {
+	        
+        &.open,
+        &:hover {
+            > a {
+                background: none;
+                border-bottom: none;
+            }
+            > ul {
+                padding: 0;
+                display: block;
+
+                
+
+                > li {
+                    &:last-child {
+                        a {
+                            border-bottom: none;
+                        }
+                    }
+
+                    > a {
+                        padding: 10px 20px;
+                        text-align: center;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+
+                    }
+                }
+            }
+        }
+        
+    }
 }
 .navbar-inverse a:hover, 
 .navbar-inverse a:focus {
@@ -51,7 +131,7 @@
 }
 
 .navbar-inverse.nav-upper {
-  height: 50px;
+  height: 40px;
 }
 .navbar-inverse.nav-upper ul {
   float: right;
@@ -70,6 +150,22 @@
     margin-left: 100px;
   }
 }
+
+@media (max-width: 1100px) {
+	.navbar-header {
+		display:none;
+	}
+
+	.navbar-lower {
+		height:75px;
+	}
+
+	.navbar-logo {
+		img {
+			height:60px;
+		}
+	}
+}
 .navbar-logo {
   width: 90px;
   height: 90px;
@@ -81,3 +177,4 @@
   left: 15px;
   z-index: 1051;
 }
+

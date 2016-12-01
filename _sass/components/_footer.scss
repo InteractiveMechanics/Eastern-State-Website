@@ -1,0 +1,66 @@
+footer {
+	border-top:1px solid #eee;
+	
+	.footer-detail {
+		padding: 30px;
+	    margin: 0;
+	    text-align: left;
+	    min-height: 180px;
+	    transition: all 0.5s;
+
+	    input {
+	        width: 400px !important;
+    		height: 50px;
+	    }
+	}
+
+	.map-image {
+    	background:url(../../assets/footer/footer-map@2x.jpg.jpg) top right;
+    	background-size: cover;
+    	height:320px;
+
+    	img {
+    		margin-bottom:20px;
+    	}
+    	
+    	p { 
+    		font-size:16px;
+    		font-weight:bold;
+    		color:white;
+    	}
+
+    	address { 
+    		font-size:16px;
+    		font-weight:bold;
+    		color:white;
+    	}
+    }
+
+    .newsletter-signup {
+    	background:#4c555c;
+    	height:320px;
+
+    	h2 {
+			font-weight:200;
+			color:white;
+			margin-bottom:20px;
+		}
+
+		input {
+			background:#d1d2d4;
+			color:#111;
+			font-style:italic;
+		}
+
+		.btn-white {
+		    height: 50px;
+		    padding-left: 25px;
+		    padding-right: 25px;
+		    margin-left: 10px;
+		}
+
+	    .form-area {
+	    	margin-bottom:30px;
+	    }
+    }
+}

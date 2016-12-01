@@ -1,0 +1,78 @@
+
+input {
+    
+
+    &[type="text"] {
+    	background: #4c545c;
+    	border-radius: 0px;
+    	padding: 20px 15px;
+    	border: 0px;
+    	border-bottom: 2px solid #2c3135;
+    	font-style: italic;
+    }
+
+    &[type="search"] {
+    	background: #4c545c;
+    	border-radius: 0px;
+    	padding: 20px 15px;
+    	border: 0px;
+    	border-bottom: 2px solid #2c3135;
+    	font-style: italic;
+    }
+
+    &[type="email"] {
+    	background: #4c545c;
+    	border-radius: 0px;
+    	padding: 20px 15px;
+    	border: 0px;
+    	border-bottom: 2px solid #2c3135;
+    	font-style: italic;
+    }
+
+    &.grey-input {
+    	background:#d1d2d4;
+		color:#111;
+    }
+	 
+	input:hover,  
+	input:active,  
+	input:focus {
+	    outline:0px !important;
+	    -webkit-appearance:none !important;
+	}
+}
+
+select {
+	&.form-control {
+		line-height:normal;
+	    height:40px;
+	    -webkit-appearance:none;
+	    -moz-appearance:none;
+	    -ms-appearance:none;
+	    appearance:none;
+	    display:block;
+	    width:100%;
+	    color:#9f9f9f;
+	    padding:8px 20px 7px 10px;
+	    line-height:normal;
+	  	background: #4c545c;
+		border-radius: 0px;
+		border: 0px;
+		border-bottom: 2px solid #2c3135;
+		font-style:italic;	
+		background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%,transparent 50%);
+	  	background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px),calc(100% - 2.5em) 0.5em;
+	  	
+	  	background-size: 5px 5px, 5px 5px, 1px 1.5em;
+	  	background-repeat: no-repeat;
+	}
+}
+
+.form-group {
+	label {
+		font-size: 14px !important;
+		letter-spacing:1px;
+		text-transform:none;
+		color:#d2d2d4;
+	}
+}

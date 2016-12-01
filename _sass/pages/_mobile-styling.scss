@@ -1,0 +1,184 @@
+@media ($screen-sm) {
+	main {
+		.container-fluid {
+			padding:0;
+		}
+	}
+	p {
+		font-size:20px !important;
+	}
+	#navbar {
+		display:none !important;
+	}
+
+	.navbar-toggle {
+		display:block;
+	}
+
+	.hero-section {
+
+		.jumbotron {
+			padding: 100px 35px 0px 35px !important;
+			height:700px;
+			h1 {
+				font-size: 60px;
+			    line-height: 65px;
+			    text-align:center;
+			}
+
+			p {
+				text-align:center;
+			}
+		}
+	}
+
+	.mainpage-tagline {
+		
+		span {
+			display:inline-block;
+			margin-bottom:10px;
+		}
+	}
+
+	.acttractions-section {
+		.jumbotron {
+		    padding: 30px 35px !important;
+
+		    h2 {
+		    	font-size:32px;
+		    	margin:0px;
+		    }
+
+		    p {
+		    	font-size:20px;
+		    }
+		}
+	}
+}
+
+@media ($screen-xs) {
+	.acttractions-section {
+		.jumbotron {
+		    padding: 20px 35px !important;
+		}
+	}
+
+	.hero-section {
+
+		.jumbotron {
+			padding: 60px 35px 20px 35px !important;
+			height:600px;
+
+			h1 {
+				font-size: 40px;
+			    line-height: 55px;
+			    text-align: center;
+			}
+
+			p {
+				text-align:center;
+
+				a {
+					margin-bottom:20px;
+					display:inline-block;
+				}
+
+				.btn-big {
+					width:90%;
+					padding:13px !important;
+				}
+			}
+		}
+	}
+
+	.mainpage-tagline {
+		padding-right:35px;
+		padding-left:35px;
+
+		span {
+			font-size:20px;
+			display:inline-block;
+			margin-bottom:10px;
+		}
+
+		label {
+			font-size:11px !important;
+		}
+
+	}
+
+	.acttractions-section {
+		p {
+			margin-bottom:30px !important;
+		}
+		
+		h2 {
+			font-size:25px !important;
+			line-height:35px !important;
+		}
+
+		.jumbotron {
+			height:750px;
+			.btn-big {
+				font-size: 12px !important;
+			    padding: 15px !important;
+			    width: 65%;
+			}
+
+			#prison-wrap {
+			    width: 100%;
+			    margin: 50px auto 0;
+			}
+		}
+	}
+
+	.mainpage-details-section {
+		.sub-detail {
+			min-height:225px !important;
+
+			h2 {
+				margin:0px !important;
+				margin-bottom:20px !important;
+			}
+
+			p {
+				line-height:30px;
+			}
+		}
+	} 
+
+	ul {
+		&.social-icons {
+			li {
+				.fa-2x {
+					font-size:1.3em !important;;
+				}
+			}
+		}
+	}
+
+	footer { 
+		.footer-detail {
+			padding:35px;
+			padding-bottom:0px;
+			input {
+				width:250px !important;
+			}
+		}
+	}
+}
+
+
+@media ($screen-xxs) {
+	
+	.acttractions-section {
+		.jumbotron {
+			#prison-wrap {
+			    width: 150%;
+			    margin: 50px auto 0;
+			    margin-left: -60px;
+			}
+		}
+	}
+
+}

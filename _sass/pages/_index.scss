@@ -4,6 +4,8 @@
 	height:650px;
 }
 
+
+
 .hero-section {
 	
 	.bottom-overlay {
@@ -12,11 +14,10 @@
 	}
 
 	.jumbotron {
-	    background: url(http://www.tickettoentertainment.com/wp-content/uploads/2015/10/terror2.jpg) top right;
+	    background: url(../../assets/hero-images/tbtw-hero-homepage@2x.jpg.jpg) top right;
     	background-size: cover;
-    	background-position-y: -130px;
     	padding:170px 135px;
-    	height:940px;
+    	height:800px;
 
     	h1 {
     		margin-bottom:60px;
@@ -29,11 +30,28 @@
 }
 
 .sponsors-section {
-	padding:70px 0;
+	padding:45px 0 60px;
 	text-align:center;
 
 	h2 {
 		color:white;
+		font-weight:200;
+	}
+
+	p {
+		color:#ddd;
+		font-size:21px !important;
+		margin:20px 0;
+
+		a {
+			color:white !important;
+			font-weight:bold;
+
+			&:hover {
+				color:white;
+				text-decoration:none;
+			}
+		}
 	}
 
 	ul {
@@ -43,7 +61,7 @@
 			display:inline-block;
 		    margin-top: 0;
 		    width: auto;
-		    margin-right:60px;
+		    margin:10px 30px;
 
 		    img {
 		    	-webkit-filter: grayscale(100%);
@@ -61,12 +79,32 @@
 	}
 }
 
+.mainpage-tagline {
+	padding:35px 0;
+	background: #4c555c;
+	text-align:center;
+	border-bottom:3px solid black;
+
+	span {
+		font-size:36px;
+		font-weight:200;
+		font-style: italic;
+		color:white;
+
+		span {
+			.source {
+
+			}
+		}
+	}
+}
+
 .acttractions-section {
 	.jumbotron {
-		background: url(https://farm3.staticflickr.com/2466/3999603103_15c77b9e86_o.jpg) top right;
+		background: #1d1d1f;
     	background-size: cover;
     	padding:100px 135px;
-    	height:725px;
+    	height:800px;
     	color:white;
 
     	h2 {
@@ -82,34 +120,44 @@
 	}	
 }
 
-.sub-detail {
-	padding: 30px;
-    text-align: left;
-    min-height: 300px;
-    transition: all 1.1s;
-}
 
-footer {
-	.footer-detail {
-		padding: 30px;
-	    margin: 0;
-	    text-align: left;
-	    min-height: 180px;
-	    transition: all 0.5s;
+.mainpage-details-section {
+	color:white;
 
-	    input {
-	        width: 400px !important;
-    		height: 50px;
-	    }
+
+	h2 {
+		font-weight:200;
+		margin-bottom:25px;
 	}
 
-	.map-image {
-    	background:#eee;
-    	height:300px;
-    }
+	.vip-expriences {
+		background: url(../../assets/homepage-block-event@2x.jpg.jpg) top right;
+    	background-size: cover;
+	}
 
-    .newsletter-signup {
-    	background:#bbb;
-    	height:300px;
-    }
+	.frequent-questions {
+		background: #4c555c;
+	}
+
+	.favorite-frights {
+		background: url(../../assets/homepage-block-vip@2x.jpg.jpg) top right;
+    	background-size: cover;
+	}
+
+	.sub-detail {
+		padding: 35px;
+	    text-align: left;
+	    min-height: 300px;
+
+	    p {
+	    	font-size:18px;
+	    	font-weight:300;
+	    	line-height:35px;
+	    }
+
+	    span {
+	    	font-weight:bold;
+
+	    }
+	}
 }

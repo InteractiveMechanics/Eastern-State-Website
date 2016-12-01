@@ -17,12 +17,120 @@
     <![endif]-->
 </head>
 <body>
-    
+
+    <div class="mobile-buy-now visible-xs">
+        <p class="text-center"><span class="glyphicon glyphicon-calendar"></span>  Buy Now & Save On Tickets!</p>
+    </div>
+
+    <div class="calendar-widget">
+       
+        <div class="close-icon">
+            <i class="glyphicon glyphicon-remove"></i>
+        </div>
+
+    </div>
+
+
+
+    <!-- menus here -->
+
+    <nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
+        <div class="mobile-menu-top">
+
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <h2>Visit</h2>
+                        <ul>
+                            <li><a href="javascript:void(0);">Schedule & Pricing </a></li>
+                            <li class="indent"><a href="javascript:void(0);">Group Rates</a></li>
+                            <li class="indent"><a href="javascript:void(0);">Ways to Save</a></li>
+                            <li><a href="javascript:void(0);">VIP Experiences</a></li>
+                            <li><a href="javascript:void(0);">Directions & Parking</a></li>
+                            <li><a href="javascript:void(0);">FAQ</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="menu-item">
+                        <h2>Preview</h2>
+                        <ul>
+                            <li><a href="javascript:void(0);">The Prison</a></li>
+                            <li><a href="javascript:void(0);">The Attraction</a></li>
+                            <li><a href="javascript:void(0);">Is ESP Haunted?</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="menu-item">
+                        <h2>Shop</h2>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="mobile-label-links">
+                <p>
+                    <a href="javascript: void(0);">Press Room</a>
+                </p>
+
+                <p>
+                    <a href="javascript: void(0);">Jobs</a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="mobile-buy-now-menu">
+            Buy Now & Save
+        </div>
+
+        <div class="mobile-menu-top">
+            <div class="address">
+                <address>
+                        2027 Fairmount Avenue <br />
+                        Philadelphia, PA 10130 <br />
+                        Phone: (215) 236-3300 <br />
+                </address>
+            </div>
+
+            <br style="clear:both;" />
+
+            <ul class="list-inline social-icons">
+
+                <li>
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                </li>
+
+                <li>
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                </li>
+
+                <li>
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div id="c-mask" class="c-mask"></div><!-- /c-mask -->
+
     <div class="site-switcher-section hidden-sm hidden-xs">
         <ul class="list-inline">
             <li>
                 <a href="javascript:void(0);" class="switch-caret">
-                    <span class="glyphicon glyphicon-triangle-top"></span>
+                    <span class="slide-up-menu glyphicon glyphicon-triangle-top"></span>
                 </a>
             </li>
 
@@ -42,7 +150,9 @@
 
 
     <header class="navbar">
-        <a class="navbar-logo" href="#">LOGO</a>
+        <a class="navbar-logo" href="#">
+            <img src="./assets/header-logo@2x.png.png">
+        </a>
 
         <div class="hours-section hidden-sm hidden-xs">
             <ul class="list-unstyled">
@@ -67,17 +177,53 @@
             <nav class="navbar navbar-inverse navbar-static-top navbar-lower">
               <div class="container-fluid">
 
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
+                <div id="o-wrapper" class="o-wrapper">
+                    <div class="c-buttons">
+                      
+                      <button id="c-button--slide-right" type="button" class="navbar-toggle collapsed" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+
+                    </div>
                 </div>
+                
 
                 <div class="collapse navbar-collapse navbar-right" id="navbar">
                   <ul class="nav navbar-nav">
-                    <li><a href="#">Visit</a>
+                    <li class="dropdown">
+                        <a  href="/what-it-is" 
+                            class="dropdown-toggle " 
+                            data-toggle="dropdown" 
+                            role="button" aria-haspopup="true" aria-expanded="false">
+
+                            Visit
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                          <li class="">
+                              <a href="javascript: void(0);">Schedule & Pricing</a>
+                          </li>
+                          
+                          <li class="indent">
+                              <a href="javascript: void(0);">Group Rates</a>
+                          </li>
+                          <li class="indent">
+                              <a href="javascript: void(0);">Ways to Save</a>
+                          </li>
+
+                          <li class="">
+                                  <a href="javascript: void(0);">VIP Experiences</a>
+                              </li>
+                          <li class="">
+                                  <a href="javascript: void(0);">Directions & Parking</a>
+                              </li>
+                          <li class="">
+                              <a href="javascript: void(0);">FAQ</a>
+                          </li>
+                      </ul>
+                    
                     </li>
                     <li><a href="#">Explore</a>
                     </li>
@@ -105,7 +251,7 @@
 
                     <div class="col-md-12">
                         
-                        <div class="subpage-hero-details">
+                        <div class="subpage-hero-details generic-hero">
                             <section>
                                 <ol class="breadcrumb">
                                     <li><a href="#">Explore</a></li>
@@ -234,91 +380,87 @@
 
         </div>
 
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
+    </main>
 
-                    <div class="col-md-6 col-sm-12 map-image">
-                        <div class="footer-detail">
-                            <h3>Logo</h3>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
 
-                            <p>
-                                <small>
-                                    Copyright 2016. Terror Behind the Walls. 
-                                    <br /> 
-                                    Eastern State Penitentiary Historic Site.
-                                </small>
-                            </p>
+                <div class="col-md-6 col-sm-12 map-image">
+                    <div class="footer-detail">
+                        <img src="./assets/footer/footer-logo@2x.png.png" alt="Site Logo" title="Eastern State: Terror Behind The Walls" width="40%" />
 
-                            <address>
-                                <small>
-                                    2027 Fairmount Avenue
-                                    Philadelphia, PA 10130
-                                    Phone: (215) 236-3300
-                                </small>
-                            </address>
-                        </div>
+                        <p>
+                            Copyright 2016. Terror Behind the Walls. 
+                            <br /> 
+                            Eastern State Penitentiary Historic Site.
+                        </p>
+
+                        <address>
+                                2027 Fairmount Avenue <br />
+                                Philadelphia, PA 10130 <br />
+                                Phone: (215) 236-3300 <br />
+                        </address>
                     </div>
+                </div>
 
-                    <div class="col-md-6 col-sm-12 newsletter-signup">
-                        <div class="footer-detail">
-                            <h2>Stay Connected!</h2>
+                <div class="col-md-6 col-sm-12 newsletter-signup">
+                    <div class="footer-detail">
+                        <h2>Stay Connected!</h2>
 
-                            <div class="form-area">
-                                <label for="subscribe">Subscribe For Our Newsletter</label>
-                                <form class="form-inline">
-                                  <div class="form-group">
-                                    
-                                    <div class="input-group">
-                                      <input type="email" class="form-control" id="subscribe">
-                                    </div>
-                                  </div>
-                                  <button type="submit" class="btn btn-white">Subscribe</button>
-                                </form>
-                            </div>
+                        <div class="form-area">
+                            <label for="subscribe">Subscribe For Our Newsletter</label>
+                            <form class="form-inline">
+                              <div class="form-group">
+                                
+                                <div class="input-group">
+                                  <input type="email" class="form-control" id="subscribe">
+                                </div>
+                              </div>
+                              <button type="submit" class="btn btn-white">Subscribe</button>
+                            </form>
+                        </div>
 
-                            <ul class="list-inline">
+                        <ul class="list-inline social-icons">
 
-                                <li>
+                            <li>
+                                <a href="https://www.facebook.com/TerrorAtESP">
                                     <span class="fa-stack fa-2x">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                                     </span>
-                                </li>
+                                </a>
+                            </li>
 
-                                <li>
+                            <li>
+                                <a href="https://twitter.com/TerrorAtESP">
                                     <span class="fa-stack fa-2x">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                                     </span>
-                                </li>
+                                </a>
+                            </li>
 
-                                <li>
+                            <li>
+                                <a href="https://www.instagram.com/terroratesp/">
                                     <span class="fa-stack fa-2x">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
                                     </span>
-                                </li>
+                                </a>
+                            </li>
 
-                                <li>
-                                    <span class="fa-stack fa-2x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </li>
-
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
-
                 </div>
-            </div>
-        </footer>
 
-    </main>
+            </div>
+        </div>
+    </footer>
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/classie.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/progressbar.js"></script>
 

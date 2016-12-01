@@ -1,0 +1,41 @@
+.image-library-page {
+
+	.press-image {
+		position: relative;
+		margin-bottom:25px;
+	}
+
+	.overlay {
+		position: absolute;
+	    bottom: 0;
+	    background: rgba(0,0,0,.75);
+	    color:white;
+	    font-size: 25px;
+    	padding: 10px 17px;
+    	cursor:pointer;
+	}
+
+	.caption {
+		font-style: italic;
+
+		strong {
+			color:#aaa;
+		}
+	}
+
+	hr {
+		margin-bottom:50px;
+	}
+
+	.filter-row {
+		margin-bottom:35px;
+
+		select {
+			width:240px;
+		}
+
+		.form-group {
+			display: inline-block;
+		}
+	}
+}

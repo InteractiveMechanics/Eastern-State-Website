@@ -25,6 +25,14 @@
     animation: fadeIn 1s 1 forwards; 
 }
 
+.display-none {
+    opacity:0;
+}
+
+.display-block {
+    opacity:1;
+}
+
 .red-link {
     color:red !important;
 }
@@ -84,7 +92,7 @@
 }
 
 hr {
-  border-color:#767676;
+  border-color:#eee;
 }
 
 .press-modal {
@@ -119,15 +127,10 @@ hr {
 }
 
 @media screen and (max-width: 900px) {
-  .main-content-subpages {
-    .figcaption {
-      font-size:11px !important;
-      padding-top:0px !important;
-    }
-  }
+  
   
   p {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
 
   h2 {
@@ -221,5 +224,40 @@ hr {
     font-size: 20px !important;
     top: 20px !important;
 
+  }
+}
+
+.calendar-widget {
+  display:none;
+}
+
+ul.social-icons {
+  margin-top:20px;
+
+  li {
+    padding:0;
+    cursor:pointer;
+    border-bottom: 0px !important;
+    
+    .fa-circle {
+      color:white !important;
+    }
+    .fa-2x {
+      font-size:2.5em !important;
+    }
+
+    .fa-inverse {
+      color:#4c555c !important;
+    }
+
+    &:hover {
+      .fa-circle {
+        color:#3b4349 !important;
+      }
+
+      .fa-inverse {
+        color:#FFF !important;
+      }
+    }
   }
 }
