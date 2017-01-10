@@ -355,7 +355,7 @@ body.has-active-menu {
 
 body {
   background: #F9F5EF; }
-  body main .container-fluid {
+  body main {
     padding: 0 45px; }
   body .calendar .month-name {
     font-size: 21px; }
@@ -765,6 +765,9 @@ label {
 .navbar-logo img {
   height: 90px; }
 
+#search-icon {
+  height: 15px; }
+
 .navbar-lower .active-link {
   background-size: 140px 44px;
   padding-bottom: 14px;
@@ -774,15 +777,18 @@ label {
 .navbar-lower li a {
   font-size: 24px;
   font-weight: 300;
-  padding-top: 0; }
+  padding-top: 0;
+  font-family: "Roboto Condensed", Garamond, sans-serif; }
   .navbar-lower li a strong {
     font-weight: 400; }
-.navbar-lower li > a:hover {
-  background-size: 140px 44px;
-  padding-bottom: 14px;
-  white-space: nowrap;
-  background-repeat: no-repeat;
-  background-image: url(../../assets/icons/icon-underline.svg); }
+.navbar-lower li > a {
+  border-bottom: 3px solid transparent;
+  transition: all 0.5s; }
+  .navbar-lower li > a:hover {
+    color: initial !important;
+    border-bottom: 3px solid #D62027;
+    padding-bottom: 14px;
+    white-space: nowrap; }
 .navbar-lower li:hover ul {
   display: block;
   padding: 0px;

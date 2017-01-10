@@ -56,6 +56,10 @@
 	}
 }
 
+#search-icon {
+	height: 15px;
+}
+
 
 
 .navbar-lower {
@@ -73,7 +77,7 @@
 			font-size:24px;
 			font-weight:300;
 			padding-top:0;
-
+			font-family: $sans-serif;
 			strong {
 				font-weight:400;
 			}
@@ -81,12 +85,14 @@
 		
 		> {
 			a {
+				border-bottom: 3px solid transparent;
+				transition: $transition;
 				&:hover {
-					background-size: 140px 44px;
+					color: initial !important;
+					border-bottom: 3px solid $scarlet;
 				    padding-bottom: 14px;
 				    white-space: nowrap;
-				    background-repeat: no-repeat;
-				    background-image: url(../../assets/icons/icon-underline.svg);
+				    
 				}
 			}
 		}
