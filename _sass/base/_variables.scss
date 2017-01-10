@@ -1,13 +1,29 @@
-// Colors
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i|Roboto:300,300i,500,500i');
+
+
+
+// Colors - TBTW
 $lightgray:         #f1f2f2;
 $midgray:           #939598;
 $black:             #231f20;
 $red:				#DB322B;
 
+$dark-buff:			#EFE9E0;
+$buff:				#F9F5EF;
+$light-buff:		#FAF6F0;
+$off-white:			#F3EEE4;
+
+$gray:				#919396;
+$indigo:			#D62027;
+
+$scarlet:			#D62027;
+$dark-scarlet:		#89070C;
+
+
 
 // Typography
-$sans-serif:         'Helvetica-Neue', sans-serif;                      // Define your basic fonts here, for consistency
-
+$sans-serif:        'Roboto Condensed', Garamond, sans-serif;                      // Define your basic fonts here, for consistency
+$roboto:			'Roboto', Georgia, sans-serif;
 
 // Media Queries
 $screen-xxs:        'max-width: 480px';

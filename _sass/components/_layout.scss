@@ -1,5 +1,5 @@
 body {
-	background:black;
+	background: $buff;
 
 	main {
 		.container-fluid {
@@ -53,7 +53,7 @@ body {
 
 .site-switcher-section {
 	width:100%;
-	background:#4c555d;
+	background: $dark-buff;
 	padding:0px 14px;
 
 	a {
@@ -62,10 +62,13 @@ body {
 		padding:16px 0;
 		display:inline-block;
 		font-weight:bold;
+		transition: $transition;
+		border-bottom: 2px solid transparent;
 
 		&:hover {
-			color:#FFF !important;
+			color: $scarlet !important;
 			text-decoration:none;
+			border-bottom: 2px solid $scarlet;
 		}
 	}
 }

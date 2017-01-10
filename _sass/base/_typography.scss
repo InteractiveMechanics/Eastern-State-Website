@@ -1,3 +1,14 @@
+//@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i|Roboto:300,300i,500,500i');
+
+body {
+	font-family: $roboto;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $sans-serif;
+}
+
+
 h1 {
 	letter-spacing: 1px;
 }
@@ -5,3 +16,18 @@ h1 {
 h2, h3 {
 	letter-spacing: 2px;
 }
+
+h4 {
+	color: $scarlet;
+}
+
+h6 {
+	text-transform: uppercase;
+	font-family: $roboto;
+}
+
+p {
+	font-family: $roboto;
+	font-weight: 300;
+}
+
