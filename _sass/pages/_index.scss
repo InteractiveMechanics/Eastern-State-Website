@@ -4,7 +4,9 @@
 	height:650px;
 }
 
-
+.watch-preview {
+	margin-left: 40px;
+}
 
 .hero-section {
 	
@@ -12,19 +14,47 @@
 		width:100%;
 		background:rgba(0,0,0, .5)
 	}
+	
+	.btn-big {
+		font-size: 21px !important;
+	}
 
-	.jumbotron {
-	    background: url(../../assets/hero-images/tbtw-hero-homepage@2x.jpg.jpg) top right;
-    	background-size: cover;
-    	padding:170px 135px;
-    	height:800px;
-
-    	h1 {
+	.jumbotron{
+	   position: relative;
+	   overflow: hidden;
+	   padding:170px 135px;
+	   height:800px;
+	   background: url(../../assets/hero-images/tbtw-hero-homepage@2x.jpg.jpg) top right;
+	   background-size: cover;
+	   background:none;
+	    
+	   .container2 {
+		  position: relative;
+		  color: #ffffff;
+		  z-index: 2; /* Show content above video */
+		} 
+		
+		#video-background{ 
+		  position: absolute;
+		  height: auto;
+		  width: auto;
+		  min-height: 100%;
+		  min-width: 100%;
+		  left: 50%;
+		  top: 50%;
+		  -webkit-transform: translate3d(-50%, -50%, 0);
+		  transform: translate3d(-50%, -50%, 0);
+		  z-index: -1;
+		}
+		
+		h1 {
     		margin-bottom:60px;
-    		font-size:90px;
+    		font-size:85px;
     		line-height:100px;
     		color:white;
-    		font-weight:bold;
+    		font-family: "almaq-rough";
+		    font-weight: normal;
+		    text-transform: uppercase;
     	}
 	}
 }
@@ -133,6 +163,17 @@
 	.vip-expriences {
 		background: url(../../assets/homepage-block-event@2x.jpg.jpg) top right;
     	background-size: cover;
+    	
+    	&:before {
+	    	content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-image: linear-gradient(to left,#000,#000);
+			opacity: .6; 
+	  	}
 	}
 
 	.frequent-questions {
@@ -142,12 +183,25 @@
 	.favorite-frights {
 		background: url(../../assets/homepage-block-vip@2x.jpg.jpg) top right;
     	background-size: cover;
+    	
+    	&:before {
+	    	content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-image: linear-gradient(to left,#000,#000);
+			opacity: .6; 
+	  	}
 	}
 
 	.sub-detail {
 		padding: 35px;
 	    text-align: left;
 	    min-height: 300px;
+	    z-index: 100000000;
+	    position: relative;
 
 	    p {
 	    	font-size:18px;

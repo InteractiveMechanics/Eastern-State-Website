@@ -6,6 +6,38 @@ body {
 			padding:0 45px;
 		}
 	}
+	
+	.calendar {
+		.month-name {
+			font-size:21px;
+		}	
+	}
+}
+
+.relative-position {
+	position: relative;
+	
+	.tooltip {
+		padding:15px !important;
+		font-size: 15px;
+		font-style: italic;
+		
+		&.left {
+			padding:15px !important;
+		}
+	}
+}
+
+.info-icon {
+	cursor: pointer;
+	background: url(../../assets/icons/icon-info.svg);
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
 }
 
 .show-site-switcher {
@@ -14,6 +46,7 @@ body {
     position: absolute;
     top: 16px;
     left: 14px;
+    cursor: pointer;
     display: none;
     z-index: 1000000;
  }
@@ -38,15 +71,19 @@ body {
 }
 
 .mobile-buy-now {
-	background-color:#FF0000;
-	padding:7px 0;
+	background-color:$red;
+	padding:18px 0;
 
 	p {
 		text-transform:uppercase;
 		font-weight:bold;
-		font-size:12px;
+		font-size:16px !important;
 		color:white;
 		margin:0px;
+	}
+	
+	.glyphicon {
+		margin-right: 10px !important;
 	}
 }
 
@@ -55,66 +92,103 @@ body {
 	.breadcrumb {
 		background:none;
 		padding: 0px;
-
-		a {
-			font-weight:bold;
-			color:white;
-			font-size:14px;
-
-			&:hover {
-				color:white;
-				text-decoration:none !important;
+		
+		li {
+			
+			&:first-child {
+				a {
+					background-image: url(../../assets/icons/icon-underline.svg);
+					background-size: 100px 42px;
+				    padding-bottom: 8px;
+				    white-space: nowrap;
+				    background-repeat: no-repeat;
+				}
 			}
+			
+			a {
+				font-weight: bold;
+			    color: white;
+			    font-size: 16px;
+			    text-transform: uppercase;
+			    letter-spacing: 1px;
+			    text-shadow: 2px 2px rgba(0,0,0,.5);
+	
+				&:hover {
+					color:white;
+					text-decoration:none !important;
+				}
+			}
+			
 		}
+
+		
 	}
 
 	h1 {
 		font-size:75px;
 		color:white;
-		font-weight:bold;
+		font-family: "almaq-rough";
+	    font-weight: normal;
+	    text-transform: uppercase;
+	    text-shadow:2px 2px rgba(0,0,0,.5);
 	}
 
 	.parking-hero {
-		background: url(../../assets/hero-images/tbtw-hero-schedule@2x.jpg.jpg) no-repeat top right;
-	    background-size: cover;
+		background-size: cover;
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-image: url(../../assets/hero-images/tbtw-hero-overlay@2x.png.png), url(../../assets/hero-images/tbtw-hero-sample@2x.jpg.jpg);
 	}
 
 	.generic-hero {
-		background: url(../../assets/hero-images/tbtw-hero-sample@2x.jpg.jpg) no-repeat top right;
-	    background-size: cover;
+		background-size: cover;
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-image: url(../../assets/hero-images/tbtw-hero-overlay@2x.png.png), url(../../assets/hero-images/tbtw-hero-sample@2x.jpg.jpg);
 	}
 
 	.press-hero {
-		background: url(../../assets/hero-images/tbtw-hero-sample2@2x.jpg.jpg) no-repeat top right;
-	    background-size: cover;
+		background-size: cover;
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-image: url(../../assets/hero-images/tbtw-hero-overlay@2x.png.png), url(../../assets/hero-images/tbtw-hero-sample2@2x.jpg.jpg);
 	}
 	
+	
 	.schedule-hero {
-		background: url(../../assets/hero-images/tbtw-hero-sample2@2x.jpg.jpg) no-repeat top right;
-	    background-size: cover;
+		background-size: cover;
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-image: url(../../assets/hero-images/tbtw-hero-overlay@2x.png.png), url(../../assets/hero-images/tbtw-hero-schedule@2x.jpg.jpg);
 	}
 
 	.search-hero {
-		background: url(../../assets/hero-images/tbtw-hero-sample2@2x.jpg.jpg) no-repeat top right;
-	    background-size: cover;
+		background-size: cover;
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-image: url(../../assets/hero-images/tbtw-hero-overlay@2x.png.png), url(../../assets/hero-images/tbtw-hero-sample2@2x.jpg.jpg);
 	}
 
 	.calendar-hero {
-		background: url(../../assets/hero-images/tbtw-hero-sample@2x.jpg.jpg) no-repeat top right;
-	    background-size: cover;
+		background-size: cover;
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-image: url(../../assets/hero-images/tbtw-hero-overlay@2x.png.png), url(../../assets/hero-images/tbtw-hero-sample@2x.jpg.jpg);
 	}
 
 	.subpage-hero-details {
 		height:445px;
 		position:relative;
 		padding:65px 105px;
-
+		border-bottom: 2px solid black;
+		    
 		section {
 			position:absolute;
 			bottom:65px;
 		}
 	}
 }
+
 .main-content-subpages {
 
 	margin-bottom:50px;
@@ -153,7 +227,7 @@ body {
 			background:none;
 			border-radius:0px;
 			border:0;
-			border-top:1px solid red;
+			border-top:1px solid grey;
 		}
 
 		h4 {
@@ -161,7 +235,7 @@ body {
 				display:block;
 				padding-top:14px;
 				padding-bottom:14px;
-				color: #db2324;
+				color: $red;
 
 				&:hover, &:focus, &:active {
 					text-decoration:none;
@@ -184,13 +258,14 @@ body {
 }
 
 .calendar-widget {
-	position: absolute;
-    width: 350px;
-    height: 500px;
+	position: fixed;
+    width: 420px;
     background: #4c555c;
     z-index: 1000000;
-    top: 300px;
-    right: -400px;
+    top: 15%;
+    right: 0px;
+	transition:0.5s all;
+	display: none;
 
     .close-icon {
 		position: absolute;
@@ -246,16 +321,13 @@ label {
 	h3 {
 		color:#e5dc19;
 		font-weight:200;
-		text-align: center;
+		margin:10px 0;
 	}
 
-	label {
-		text-transform:none !important;
-	}
 
 	ul {
 		padding:0px;
-		margin:15px 0  30px;
+		margin:5px 0  30px;
 
 		li {
 			list-style:none;
@@ -275,16 +347,6 @@ label {
 
 	button {
 		margin-top:10px;
-	}
-}
-
-@media (max-width:1100px) {
-	h3 {
-		font-size:15px !important;
-		margin-bottom:15px;
-	}	
-	
-	p {
-		font-size: 13px !important;
+		font-size: 21px !important;
 	}
 }

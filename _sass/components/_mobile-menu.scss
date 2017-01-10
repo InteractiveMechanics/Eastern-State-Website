@@ -13,13 +13,33 @@ body {
   z-index: 1000000000;
 }
 
+
+.overflow-menu {
+	padding-top:10px !important;
+	> ul {
+		overflow-y: scroll;
+		height: 300px;
+	}
+}
 .mobile-menu-top {
     padding: 30px;
-
+	
+	address {
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
     h2 {
         color:white;
         font-weight: 200;
         margin-bottom: 20px;
+    }
+    
+    address {
+        color: white;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 26px;
+		
     }
 
     ul {
@@ -54,12 +74,14 @@ body {
 
     > ul {
         margin-bottom: 25px;
-
+        
         > li {
             border-bottom: 1px solid #ddd;
         }
     }
 }
+
+
 
 .mobile-label-links {
     p {
@@ -77,7 +99,7 @@ body {
 }
 
 .mobile-buy-now-menu {
-    background: #db2324;
+    background: $red;
     padding: 20px 30px;
     color:white;
     font-size: 20px;

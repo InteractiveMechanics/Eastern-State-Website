@@ -1,8 +1,14 @@
 .image-library-page {
-
+	
 	.press-image {
 		position: relative;
 		margin-bottom:25px;
+		
+		&:hover {
+			> .overlay {
+			    background: $red;
+			}
+		}
 	}
 
 	.overlay {
@@ -36,6 +42,21 @@
 
 		.form-group {
 			display: inline-block;
+		}
+	}
+	
+	.press-items {
+		.row {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display:         flex;
+			flex-wrap: wrap;
+		  
+			> [class*='col-'] {
+			  	display: flex;
+			  	flex-direction: column;
+			}
 		}
 	}
 }
