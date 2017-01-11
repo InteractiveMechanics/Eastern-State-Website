@@ -26,8 +26,19 @@
 
 	ul {
 		li {
-			color:#eee;
+			color: $sand;
+			font-family: $sans-serif;
 			line-height: 28px;
+			a { 
+				color: $scarlet;
+				text-decoration: none;
+				border-bottom: 1px dotted $scarlet;
+				transition: $transition;
+				&:hover {
+					color: $dark-scarlet;
+					border-bottom-color: $dark-scarlet;
+				}	
+			}
 		}
 		
 		margin-bottom:0px;
@@ -78,6 +89,8 @@
 			font-weight:300;
 			padding-top:0;
 			font-family: $sans-serif;
+			color: $black;
+
 			strong {
 				font-weight:400;
 			}
@@ -85,14 +98,12 @@
 		
 		> {
 			a {
-				border-bottom: 3px solid transparent;
 				transition: $transition;
+				
 				&:hover {
-					color: initial !important;
-					border-bottom: 3px solid $scarlet;
+					//border-bottom: 3px solid $scarlet;
 				    padding-bottom: 14px;
 				    white-space: nowrap;
-				    
 				}
 			}
 		}
@@ -103,20 +114,22 @@
 				right: 0;
                 left: 0;
                 min-width:280px;
-                background-color:#4c545c;
+                background-color: #ffffff;
                 padding:20px 15px;
+                border-radius: 0px;
 
                 li {
                 	a {
                 		font-size:16px;
-                		font-weight:normal;
+                		font-family: $roboto;
+                		font-weight: 300;
                 		white-space: normal;
                 		padding: 10px 20px;
                         overflow: hidden;
-                        color:#eeeeee;
+                        color: $black;
 
                         &:hover {
-                        	color:$red;
+                        	color:$scarlet;
                         }
                 	}
 
@@ -162,10 +175,38 @@
         
     }
 }
+
+
+.navbar-inverse .navbar-nav>li>a {
+	color: $black;
+	transition: $transition;
+	&:after {
+		content: "";
+	    border-bottom: 3px solid $scarlet;
+	    position: absolute;
+	    margin-right: 15px;
+	    left: 50%;
+	    height: 2px;
+	    background: transparent;
+	    width: 0%;
+	    bottom: -4px;
+	    transition: width 0.5s ease, left 0.5s ease;
+	}
+	&:hover, &:active {
+		color: $black;
+		&:after {
+			right: 0;
+		    height: 2px;
+		    width: 100%;
+		    left: 0;
+		}
+	}
+}
+
 .navbar-inverse a:hover, 
 .navbar-inverse a:focus {
   background-color: transparent !important;
-  color: #999999;
+  color: blue;
 }
 
 .navbar-inverse.nav-upper {
@@ -180,7 +221,7 @@
   font-size: 14px;
 }
 .navbar-inverse.nav-upper .navbar-upper > li > a {
-  color: #777;
+  color: #BABCBE;
   cursor:pointer;
 }
 @media (min-width: 768px) {
