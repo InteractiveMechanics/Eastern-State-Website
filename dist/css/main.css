@@ -189,8 +189,7 @@ ul.social-icons {
   margin-top: 20px; }
   ul.social-icons li {
     padding: 0;
-    cursor: pointer;
-    border-bottom: 0px !important; }
+    cursor: pointer; }
     ul.social-icons li .fa-circle {
       color: white !important; }
     ul.social-icons li .fa-2x {
@@ -239,7 +238,7 @@ body.has-active-menu {
 .c-menu {
   position: fixed;
   z-index: 200;
-  background-color: #4b535c;
+  background-color: #EFE9E0;
   transition: transform 0.3s;
   z-index: 1000000000; }
 
@@ -255,7 +254,7 @@ body.has-active-menu {
     margin-bottom: 0px;
     padding-bottom: 0px; }
   .mobile-menu-top h2 {
-    color: white;
+    color: #231f20;
     font-weight: 200;
     margin-bottom: 20px; }
   .mobile-menu-top address {
@@ -278,11 +277,19 @@ body.has-active-menu {
           text-decoration: none; }
     .mobile-menu-top ul ul li {
       margin-bottom: 20px;
-      font-size: 16px; }
+      font-size: 13px; }
+      .mobile-menu-top ul ul li a {
+        color: #231f20; }
+    .mobile-menu-top ul .list-left {
+      float: left;
+      margin-right: 20px; }
   .mobile-menu-top > ul {
     margin-bottom: 25px; }
     .mobile-menu-top > ul > li {
       border-bottom: 1px solid #ddd; }
+
+.mobile-menu-address-wrapper {
+  background-color: #536071; }
 
 .mobile-label-links p a {
   font-size: 15px;
@@ -292,21 +299,82 @@ body.has-active-menu {
   .mobile-label-links p a:hover {
     text-decoration: none; }
 
+.mobile-search {
+  float: left;
+  background-color: #ffffff;
+  padding: 16px 20px;
+  transition: all 0.5s; }
+  .mobile-search:hover {
+    background-color: #BABCBE; }
+    .mobile-search:hover svg path {
+      fill: #ffffff; }
+  .mobile-search svg {
+    height: 25px;
+    fill: #BABCBE; }
+
 .mobile-buy-now-menu {
-  background: #DB322B;
-  padding: 20px 30px;
-  color: white;
   font-size: 20px;
-  cursor: pointer; }
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", Garamond, sans-serif; }
+  .mobile-buy-now-menu .mobile-buy-now-save {
+    background-color: #D62027;
+    padding: 18px 0px 18px 95px;
+    transition: all 0.5s; }
+    .mobile-buy-now-menu .mobile-buy-now-save h2 {
+      margin: 0px;
+      color: #ffffff;
+      display: inline-block;
+      margin-right: 10px; }
+    .mobile-buy-now-menu .mobile-buy-now-save svg {
+      fill: #ffffff;
+      height: 17px; }
+    .mobile-buy-now-menu .mobile-buy-now-save:hover {
+      background-color: #BABCBE; }
+      .mobile-buy-now-menu .mobile-buy-now-save:hover h2 {
+        color: #ffffff; }
+      .mobile-buy-now-menu .mobile-buy-now-save:hover svg {
+        fill: #ffffff; }
   .mobile-buy-now-menu ul.social-icons li {
-    border: 0px !important;
+    border-radius: 50%;
+    border: 1px solid #ffffff !important;
+    border-bottom: 1px solid #ffffff !important;
+    width: 40px;
+    height: 40px;
     font-size: 14px !important; }
-    .mobile-buy-now-menu ul.social-icons li .fa-2x {
-      font-size: 2em !important; }
   .mobile-buy-now-menu address {
     font-size: 16px;
     font-weight: bold;
-    color: white; }
+    color: white;
+    width: 50%; }
+
+.facebook, .twitter, .instagram, .pinterest {
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 39px;
+  height: 39px;
+  border-bottom: 1px solid white;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s; }
+  .facebook svg, .twitter svg, .instagram svg, .pinterest svg {
+    fill: #ffffff; }
+  .facebook:hover, .twitter:hover, .instagram:hover, .pinterest:hover {
+    border-color: #919396;
+    border-bottom: 1px solid #919396; }
+    .facebook:hover svg, .twitter:hover svg, .instagram:hover svg, .pinterest:hover svg {
+      fill: #919396; }
+
+.pinterest svg {
+  height: 19px; }
+
+.hours-wrapper {
+  float: left;
+  width: 50%;
+  font-weight: 300;
+  height: 50px;
+  color: #ffffff; }
 
 .c-mask {
   position: fixed;
@@ -740,11 +808,14 @@ label {
     width: 30px;
     height: 4px; }
 
+.dropdown-menu {
+  border: none; }
+
 .hours-section {
   float: right;
   width: 200px;
   padding-left: 22px;
-  border-left: 2px solid rgba(255, 255, 255, 0.25);
+  border-left: 2px solid #EFE9E0;
   font-size: 16px; }
   .hours-section ul {
     margin-bottom: 0px; }
@@ -833,17 +904,19 @@ label {
 
 .navbar-inverse .navbar-nav > li > a {
   color: #231f20;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  padding: 10px 0px;
+  margin: 0px 15px; }
   .navbar-inverse .navbar-nav > li > a:after {
     content: "";
     border-bottom: 3px solid #D62027;
     position: absolute;
-    margin-right: 15px;
+    margin-right: -15px;
     left: 50%;
     height: 2px;
     background: transparent;
     width: 0%;
-    bottom: -4px;
+    bottom: 0px;
     transition: width 0.5s ease, left 0.5s ease; }
   .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:active {
     color: #231f20; }
@@ -1297,6 +1370,9 @@ select.form-control {
   .mobile-menu-top address {
     font-size: 12px;
     line-height: 20px; }
+
+  .hours-wrapper {
+    font-size: 12px; }
 
   ul.social-icons {
     margin-bottom: 0px; }

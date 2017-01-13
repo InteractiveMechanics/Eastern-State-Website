@@ -8,7 +8,7 @@ body {
 .c-menu {
   position: fixed;
   z-index: 200;
-  background-color: #4b535c;
+  background-color: $dark-buff;
   transition: transform 0.3s;
   z-index: 1000000000;
 }
@@ -29,7 +29,7 @@ body {
 		padding-bottom: 0px;
 	}
     h2 {
-        color:white;
+        color: $black;
         font-weight: 200;
         margin-bottom: 20px;
     }
@@ -67,8 +67,16 @@ body {
         ul {
             li{
                 margin-bottom:20px;
-                font-size: 16px;
+                font-size: 13px;
+                a {
+                    color: $black;
+                }
             }
+        }
+        .list-left {
+            float: left;
+            margin-right: 20px;
+
         }
     }
 
@@ -82,6 +90,9 @@ body {
 }
 
 
+.mobile-menu-address-wrapper {
+    background-color: $indigo;
+}
 
 .mobile-label-links {
     p {
@@ -98,22 +109,65 @@ body {
     }
 }
 
+.mobile-search {
+    float: left;
+    background-color: #ffffff;
+    padding: 16px 20px;
+    transition: $transition;
+    &:hover {
+        background-color: $sand;
+        svg path{
+            fill: #ffffff;
+        }
+    }
+    svg {
+        height: 25px;
+        fill: $sand;
+    }
+}
+
+
+
 .mobile-buy-now-menu {
-    background: $red;
-    padding: 20px 30px;
-    color:white;
     font-size: 20px;
     cursor: pointer;
-
+    text-transform: uppercase;
+    font-family: $sans-serif;
+    .mobile-buy-now-save {
+        background-color: $scarlet;
+        padding: 18px 0px 18px 95px;
+        transition: $transition;
+        h2 {
+            margin: 0px;
+            color: #ffffff;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        svg {
+            fill: #ffffff;
+            height: 17px;
+        }
+        &:hover {
+            background-color: $sand;
+            h2 {
+                color: #ffffff;
+            }
+            svg {
+                fill: #ffffff;
+            }
+        }
+    }
     ul {
         &.social-icons {
             li {
-                border:0px !important;
+                border-radius: 50%;
+                border: 1px solid #ffffff !important;
+                border-bottom: 1px solid #ffffff !important;
+                width: 40px;
+                height: 40px;
                 font-size:14px !important;  
 
-                .fa-2x {
-                    font-size: 2em !important;
-                }  
+                 
             }
         }
     }
@@ -122,7 +176,45 @@ body {
         font-size: 16px;
         font-weight: bold;
         color:white;
+        width: 50%;
     }
+    
+}
+
+.facebook, .twitter, .instagram, .pinterest {
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 39px;
+    height: 39px;
+    border-bottom: 1px solid white;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    transition: $transition;
+    svg {
+        fill: #ffffff;
+    }
+    &:hover {
+        border-color: $gray;
+        border-bottom: 1px solid $gray;
+        svg {
+            fill: $gray;
+        }
+    }
+}
+
+.pinterest {
+    svg {
+        height: 19px;
+    }
+}
+
+.hours-wrapper {
+   float: left;
+    width: 50%;
+    font-weight: 300;
+    height: 50px;
+    color: #ffffff;
 }
 
 
