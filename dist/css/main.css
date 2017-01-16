@@ -63,7 +63,7 @@
   font-weight: bold; }
 
 .btn-white {
-  color: #DB322B;
+  color: #D62027;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
   text-transform: uppercase;
@@ -76,13 +76,13 @@
 .btn-white.active,
 .open .dropdown-toggle.btn-white {
   color: #FFF;
-  background-color: #DB322B;
-  border-color: #DB322B; }
+  background-color: #D62027;
+  border-color: #D62027; }
 
 .btn-red {
   color: #FFF;
-  background-color: #DB322B;
-  border-color: #DB322B;
+  background-color: #D62027;
+  border-color: #D62027;
   text-transform: uppercase;
   border-radius: 0px;
   font-size: 14px;
@@ -92,7 +92,7 @@
 .btn-red:active,
 .btn-red.active,
 .open .dropdown-toggle.btn-white {
-  color: #DB322B;
+  color: #D62027;
   background-color: #FFF;
   border-color: #FFF; }
 
@@ -101,7 +101,7 @@
   padding: 23px 40px !important; }
 
 hr {
-  border-color: gray; }
+  border-color: #919396; }
 
 .press-modal h3 {
   margin-top: 0px; }
@@ -357,7 +357,9 @@ body.has-active-menu {
   display: flex !important;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  margin-right: 10px !important;
+  margin-top: 20px !important; }
   .facebook svg, .twitter svg, .instagram svg, .pinterest svg {
     fill: #ffffff; }
   .facebook:hover, .twitter:hover, .instagram:hover, .pinterest:hover {
@@ -994,11 +996,12 @@ footer {
     min-height: 180px;
     transition: all 0.5s;
     z-index: 10000000;
-    position: absolute; }
+    position: absolute;
+    width: calc(100% - 60px); }
     footer .footer-detail input {
       height: 50px; }
   footer .map-image {
-    background: url(../../assets/footer/footer-map@2x.jpg.jpg) top right;
+    background: url(../../assets/footer/footer-map@2x.jpg) top right;
     background-size: cover;
     height: 320px; }
     footer .map-image:before {
@@ -1018,8 +1021,15 @@ footer {
       color: white; }
     footer .map-image address {
       font-size: 16px;
-      font-weight: bold;
-      color: white; }
+      color: #231f20; }
+      footer .map-image address a {
+        color: #D62027;
+        border-bottom: 1px dotted #D62027;
+        transition: all 0.5s; }
+        footer .map-image address a:hover {
+          color: #89070C;
+          border-bottom: 1px dotted #89070C;
+          text-decoration: none; }
   footer .newsletter-signup {
     background: #4c555c;
     height: 320px; }
@@ -1031,10 +1041,9 @@ footer {
       background: #d1d2d4;
       color: #111;
       font-style: italic;
-      width: 98% !important;
       border-bottom: none; }
     footer .newsletter-signup .input-group {
-      width: 80%; }
+      width: 100%; }
     footer .newsletter-signup .btn-white {
       height: 50px;
       padding-left: 25px;
@@ -1042,6 +1051,14 @@ footer {
       margin-left: 10px; }
     footer .newsletter-signup .form-area {
       margin-bottom: 30px; }
+      footer .newsletter-signup .form-area .form-group {
+        width: 72%; }
+        footer .newsletter-signup .form-area .form-group button {
+          float: right; }
+
+#subscribe::-webkit-input-placeholder {
+  color: #919396;
+  line-height: 1.6; }
 
 input[type="text"] {
   background: #4c545c;
@@ -1375,7 +1392,8 @@ select.form-control {
     font-size: 12px; }
 
   ul.social-icons {
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    display: flex; }
 
   .bottom-menu-top {
     padding-bottom: 0px; }

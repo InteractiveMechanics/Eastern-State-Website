@@ -191,6 +191,8 @@ body {
     justify-content: center;
     align-items: center;
     transition: $transition;
+    margin-right: 10px !important;
+    margin-top: 20px !important;
     svg {
         fill: #ffffff;
     }
