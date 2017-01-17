@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
     <link href="./dist/css/main.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -366,18 +368,18 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="jumbotron">
+                        <div class="jumbotron" id="homepage-slider">
+                            <div class="homepage-slider-single" style="background-image: url('./assets/hero-images/hero-image-01@2x.jpg');">
+                                <p>testing testing</p>
+                            </div>
 
-                            <h1>A Massive Haunted House Inside A Real Prison</h1>
+                            <div class="homepage-slider-single" style="background-image: url('./assets/hero-images/hero-image-02@2x.jpg');">
+                                <p>testing testing</p>
+                            </div>
 
-                            <p>
-                                <a class="btn btn-red btn-lg btn-big" href="javascriptL void(0);" role="button">
-                                    Buy Now & Save
-                                </a>
-                                <a class="btn btn-white btn-lg btn-big watch-preview" href="javascript: void(0);" role="button">
-                                   <span class="glyphicon glyphicon-play" style="display:inline-block; padding-right:10px;"></span> Watch The Preview
-                                </a>
-                            </p>
+                            <div class="homepage-slider-single" style="background-image: url('./assets/hero-images/hero-image-03@2x.jpg');">
+                                <p>testing testing</p>
+                            </div>
 
                         </div>
                     </div>
@@ -386,20 +388,8 @@
             </div>
         </div>
 
-        <div class="container-fluid">
-            <div class="mainpage-tagline">
-                <div class="row">
-                    <div class="col-md-12">
-                        <span class="text-center">
-                            "One of America's top haunted attractions." 
-                        </span>
-                        <label>The Travel Channel</label>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="acttractions-section">
+        <div class="about-section">
             <div class="container-fluid">
                 <div class="row">
 
@@ -410,43 +400,40 @@
 
                                 <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
 
-                                    <h2>Six Attractions inside the Prison's Cellblocks</h2>
+                                    <h2>America's Most Historic Prison</h2>
 
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Excepteur sint occaecat cupidatat non proident, sunt in culpa. Do eiusmod. Exc amet, consectetur adecat cupidatat non proident, s amet, consectetur adulpa.
+                                        Eastern State Penitentiary was once the ost famouse and expensive prison in the world, but stands today in ruin, a haunting world of crumbling cellblocks and empty guard towers. Known for its grand architecture and strict discipline, this was the world's first true "penitentiary," a prison design to inspire penitence, or true regret.
                                     </p>
 
                                     <p>
-                                        <a class="btn btn-white btn-lg btn-big" href="/dcpunk/timeline" role="button">
-                                            View All Attractions
+                                        <a class="" href="/dcpunk/timeline" role="button">
+                                            Explore Eastern State's History
                                         </a>
+                                        <svg version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                                             x="0px" y="0px" width="17.5px" height="10.2px" viewBox="0 0 17.5 10.2" enable-background="new 0 0 17.5 10.2"
+                                             xml:space="preserve">
+                                                <defs>
+                                                </defs>
+                                                <g>
+                                                    <g>
+                                                        <rect y="4.6" fill="#D62027" width="16.1" height="1"/>
+                                                    </g>
+                                                    <g>
+                                                        <g>
+                                                            <polygon fill="#D62027" points="12,10.2 11.1,9.3 15.7,5.1 11.1,0.9 12,0 17.5,5.1            "/>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
                                     </p>
                                 </div>
 
-                                <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
-                                  <div id="prison-wrap">
-                                    <img id="prison-img" src="./assets/prison-gfx@2x.png.png" alt="Prison" />
-                                    
-                                    <a href="javascript:void(0);">
-                                        <span class="bubble detritus" style="top: 8%; left: 7%;"></span>
-                                    </a>
-                                    <a href="javascript:void(0);">
-                                        <span class="bubble breakout" style="top: -11%; left: 32%;"></span>
-                                    </a>
-                                    <a href="javascript:void(0);">
-                                        <span class="bubble infirmary" style="top: 14%; left: 37%;"></span>
-                                    </a>
-                                    <a href="javascript:void(0);">
-                                        <span class="bubble quaratine" style="top: 40%; left: 17%;"></span>
-                                    </a>
-                                    <a href="javascript:void(0);">
-                                        <span class="bubble lockdown" style="top: 57%; left: 48.5%;"></span>
-                                    </a>
-                                    <a href="javascript:void(0);">
-                                        <span class="bubble machine-shop" style="top: 26%; left: 58%;"></span>
-                                    </a>
-                                  </div>
-                                </div>
+                               
+
+
+
 
                             </div>
 
@@ -462,97 +449,100 @@
         <div class="mainpage-details-section">
             <div class="container-fluid">
                 <div class="row" style="margin:0;">
-                    <div class="col-md-4 vip-expriences">
+                <div class="col-sm-12">
+                    <div class="details-block-1">
                         <div class="sub-detail">
-                            <h2>Upgrade Your Experience</h2>
+                            <h6>July 16, 2016</h6>
+                            <h2>Bastille Day</h2>
 
                             <p>
-                                Upgrade your experience with one of these VIP packages, including Quick Pass and VIP tours. <span>Learn more</span>
+                                Bastile Day is BACK! Here's what to expect for 2016. <a href=""><span>Learn more</span></a> 
+                                <svg version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                                     x="0px" y="0px" width="26.5px" height="20.4px" viewBox="0 0 26.5 20.4" enable-background="new 0 0 26.5 20.4"
+                                     xml:space="preserve">
+                                    <defs>
+                                    </defs>
+                                        <g>
+                                            <g>
+                                                <rect y="9.2" fill="#FFFFFF" width="23.8" height="2"/>
+                                            </g>
+                                            <g>
+                                                <g>
+                                                    <polygon fill="#FFFFFF" points="15.5,20.4 13.8,18.6 22.8,10.2 13.8,1.8 15.5,0 26.5,10.2             "/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                </svg>
                             </p>
                         </div>
 
-                        <div class="darken-overlay"></div>
+                        <!-- <div class="darken-overlay"></div> -->
                     </div>
-
-                    <div class="col-md-4 frequent-questions">
+                    <div class="details-block-2">
                         <div class="sub-detail">
-                            <h2>Some Other Headline</h2>
+                            <h6>July 16, 2016</h6>
+                            <h2>Bastille Day</h2>
 
                             <p>
-                                Including where to park, when to arrive, what to expect, how to get a discount, and more. <span>Learn more</span>
+                                Bastile Day is BACK! Here's what to expect for 2016. <a href=""><span>Learn more</span></a> 
+                                <svg version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                                     x="0px" y="0px" width="26.5px" height="20.4px" viewBox="0 0 26.5 20.4" enable-background="new 0 0 26.5 20.4"
+                                     xml:space="preserve">
+                                    <defs>
+                                    </defs>
+                                        <g>
+                                            <g>
+                                                <rect y="9.2" fill="#FFFFFF" width="23.8" height="2"/>
+                                            </g>
+                                            <g>
+                                                <g>
+                                                    <polygon fill="#FFFFFF" points="15.5,20.4 13.8,18.6 22.8,10.2 13.8,1.8 15.5,0 26.5,10.2             "/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                </svg>
                             </p>
                         </div>
-                    </div>
 
-                    <div class="col-md-4 favorite-frights">
+                        <!-- <div class="darken-overlay"></div> -->
+                    </div>
+                    <div class="details-block-3">
                         <div class="sub-detail">
-                            <h2>Our Favorite Frights</h2>
+                            <h6>July 16, 2016</h6>
+                            <h2>Bastille Day</h2>
 
                             <p>
-                                Take your TBTW experience up a notch with one of these VIP options, including Quick Pass and VIP Tours. <span>Learn more</span>
+                                Bastile Day is BACK! Here's what to expect for 2016. <a href=""><span>Learn more</span></a> 
+                                <svg version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                                     x="0px" y="0px" width="26.5px" height="20.4px" viewBox="0 0 26.5 20.4" enable-background="new 0 0 26.5 20.4"
+                                     xml:space="preserve">
+                                    <defs>
+                                    </defs>
+                                        <g>
+                                            <g>
+                                                <rect y="9.2" fill="#FFFFFF" width="23.8" height="2"/>
+                                            </g>
+                                            <g>
+                                                <g>
+                                                    <polygon fill="#FFFFFF" points="15.5,20.4 13.8,18.6 22.8,10.2 13.8,1.8 15.5,0 26.5,10.2             "/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                </svg>
                             </p>
                         </div>
 
-                        <div class="darken-overlay"></div>
+                        <!-- <div class="darken-overlay"></div> -->
                     </div>
 
-                </div>
-            </div>
-        </div>
 
 
-        <div class="sponsors-section">
-            <div class="container-fluid">
-                <div class="row">
-
-                    <div class="col-md-12">
-                        <h2>Proudly Supported by our Corporate Sponsors</h2>
+                   
                     </div>
 
-                </div>
-
-                <div class="row">
-
-                    <div class="col-md-12">
-                        <ul class="list-unstyled">
-                            <li class="logo">
-                                <img src="./assets/sponsors/sponsor-barqs.png" width="100">
-                            </li>
-
-                            <li class="logo">
-                                <img src="./assets/sponsors/sponsor-fanta.png" width="100">
-                            </li>
-
-                            <li class="logo">
-                                <img src="./assets/sponsors/sponsor-coke.png" width="100">
-                            </li>
-
-                            <li class="logo">
-                                <img src="./assets/sponsors/sponsor-metro.png" width="100">
-                            </li>
-
-                            <li class="logo">
-                                <img src="./assets/sponsors/sponsor-panera.png" width="100">
-                            </li>
-
-                            <li class="logo">
-                                <img src="./assets/sponsors/sponsor-auntieannes.png" width="100">
-                            </li>
-
-                            <li class="logo">
-                                <img src="./assets/sponsors/sponsor-zipcar.png" width="100">
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="become-a-sponsor">
-                            Interested in <a href="javascript:void(0);">sponsorship or sampling opportunities?</a>
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -562,10 +552,11 @@
     <footer>
         <div class="container-fluid">
             <div class="row">
+                <div class="col-sm-12">
 
-                <div class="col-md-6 col-sm-12 map-image">
+                <div class="map-image">
                     <div class="footer-detail">
-                        <img src="./assets/footer/footer-logo@2x.png" alt="Site Logo" title="Eastern State: Terror Behind The Walls" width="40%" />
+                        <img src="./assets/footer/footer-logo@2x.png" alt="Site Logo" title="" />
 
                       
                         <address>
@@ -576,7 +567,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-sm-12 newsletter-signup">
+                <div class="newsletter-signup">
                     <div class="footer-detail">
                         <h2>Subscribe for our Newsletter!</h2>
 
@@ -593,39 +584,70 @@
                             </form>
                         </div>
 
-                        <ul class="list-inline social-icons">
+                        <ul class="social-icons">
 
-                            <li>
-                                <a href="https://www.facebook.com/TerrorAtESP">
-                                    <span class="fa-stack fa-2x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
+                <li class="facebook">
+                    <svg version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                     x="0px" y="0px" width="11.3px" height="20.3px" viewBox="0 0 11.3 20.3" enable-background="new 0 0 11.3 20.3"
+                     xml:space="preserve">
+                        <defs>
+                        </defs>
+                        <path fill="" d="M11.3,3.5H8C7.7,3.5,7.2,4,7.2,4.7V7h4v3.3h-4v9.9H3.4v-9.9H0V7h3.4V5.1C3.4,2.3,5.4,0,8,0h3.2V3.5z"/>
+                    </svg>
+                </li>
 
-                            <li>
-                                <a href="https://twitter.com/TerrorAtESP">
-                                    <span class="fa-stack fa-2x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
+                <li class="twitter">
+                   <svg version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                    x="0px" y="0px" width="52.9px" height="52.9px" viewBox="0 0 52.9 52.9" enable-background="new 0 0 52.9 52.9"
+                    xml:space="preserve">
+                        <defs>
+                        </defs>
+                        <path fill="" d="M26.4,0C11.8,0,0,11.8,0,26.4C0,41,11.8,52.9,26.4,52.9C41,52.9,52.9,41,52.9,26.4C52.9,11.8,41,0,26.4,0z
+                             M37.2,21.7c0,0.2,0,0.4,0,0.7c0,6.9-5.2,14.8-14.8,14.8c-2.9,0-5.7-0.9-8-2.3c0.4,0,0.8,0.1,1.2,0.1c2.4,0,4.7-0.8,6.5-2.2
+                            c-2.3,0-4.2-1.5-4.9-3.6c0.3,0.1,0.6,0.1,1,0.1c0.5,0,0.9-0.1,1.4-0.2c-2.4-0.5-4.2-2.6-4.2-5.1c0,0,0,0,0-0.1
+                            c0.7,0.4,1.5,0.6,2.4,0.7c-1.4-0.9-2.3-2.5-2.3-4.3c0-1,0.3-1.8,0.7-2.6c2.6,3.1,6.4,5.2,10.7,5.4c-0.1-0.4-0.1-0.8-0.1-1.2
+                            c0-2.9,2.3-5.2,5.2-5.2c1.5,0,2.9,0.6,3.8,1.6c1.2-0.2,2.3-0.7,3.3-1.3c-0.4,1.2-1.2,2.2-2.3,2.9c1.1-0.1,2.1-0.4,3-0.8
+                            C39.1,20,38.2,20.9,37.2,21.7z"/>
+                    </svg>
+                </li>
 
-                            <li>
-                                <a href="https://www.instagram.com/terroratesp/">
-                                    <span class="fa-stack fa-2x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
+                <li class="instagram">
+                    <svg version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                     x="0px" y="0px" width="17.2px" height="17.2px" viewBox="0 0 17.2 17.2" enable-background="new 0 0 17.2 17.2"
+                     xml:space="preserve">
+                        <defs>
+                        </defs>
+                    <path fill="" d="M14.5,0H2.7C1.2,0,0,1.2,0,2.7v2.9h4.3c0.9-1.3,2.5-2.2,4.2-2.2c1.8,0,3.3,0.9,4.2,2.2h4.3V2.7
+                        C17.2,1.2,16,0,14.5,0z M15.8,3.3c0,0.3-0.2,0.5-0.5,0.5h-1.4c-0.3,0-0.5-0.2-0.5-0.5V1.9c0-0.3,0.2-0.5,0.5-0.5h1.4
+                        c0.3,0,0.5,0.2,0.5,0.5V3.3z"/>
+                    <path fill="" d="M17.2,14.5c0,1.5-1.2,2.7-2.7,2.7H2.7C1.2,17.2,0,16,0,14.5V7.6h3.5c-0.1,0.3-0.1,0.7-0.1,1
+                        c0,2.9,2.3,5.2,5.2,5.2c2.9,0,5.2-2.3,5.2-5.2c0-0.3,0-0.7-0.1-1h3.5V14.5z"/>
+                    <circle fill="" cx="8.6" cy="8.6" r="3.2"/>
+                    </svg>
+                </li>
 
-                        </ul>
+                <li class="pinterest">
+                    <svg version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                     x="0px" y="0px" width="17.5px" height="22.5px" viewBox="0 0 17.5 22.5" enable-background="new 0 0 17.5 22.5"
+                     xml:space="preserve">
+                        <defs>
+                        </defs>
+                        <path fill="" d="M10.2,16.3c-1.4-0.1-1.9-0.8-3-1.4C6.6,18,5.9,21,3.7,22.5c-0.7-4.7,1-8.2,1.7-11.9C4.2,8.4,5.6,4,8.3,5.1
+                            c3.3,1.3-2.9,8.1,1.3,8.9c4.4,0.9,6.2-7.6,3.5-10.4C9.2-0.3,1.7,3.6,2.6,9.3c0.2,1.4,1.7,1.8,0.6,3.7C0.7,12.5-0.1,10.5,0,7.8
+                            c0.2-4.3,3.9-7.3,7.6-7.8c4.7-0.5,9.2,1.7,9.8,6.2C18.1,11.3,15.3,16.7,10.2,16.3z"/>
+                    </svg>
+                </li>
+
+            </ul>
+
+                        
                     </div>
                 </div>
-
+                </div>
             </div>
         </div>
     </footer>
@@ -667,6 +689,7 @@
     </div>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="./js/classie.js"></script>
     <script src="./js/main.js"></script>
 

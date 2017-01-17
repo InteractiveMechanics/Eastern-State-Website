@@ -1,0 +1,15 @@
+
+.slick-dots {
+	bottom: 50px;
+	z-index: 50;
+	li {
+		display: block;
+		button {
+			&:before {
+				font-size: 20px;
+				color: $scarlet;
+			}
+		}
+	}
+}
+

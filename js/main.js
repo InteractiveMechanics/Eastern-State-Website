@@ -108,4 +108,12 @@ $(function(){
             $( this ).children("span").removeClass("glyphicon-triangle-bottom");
         }
     });
+
+    $('#homepage-slider').slick({
+            dots: true,
+            arrows: false
+    });
+    
+
+
 });
