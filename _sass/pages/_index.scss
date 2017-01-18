@@ -35,6 +35,35 @@
 	    .homepage-slider-single {
 	    	height: 650px;
 	    	background-size: cover;
+	    	position: relative;
+	    	div {
+	    		background: #ffffff;
+	    		height: 250px;
+	    		width: 450px;
+	    		position: absolute;
+	    		bottom: 75px;
+	    		right: 35px;
+	    		padding: 15px 30px;
+	    		-webkit-box-shadow: 4px 3px 9px 2px rgba(0,0,0,0.47);
+				-moz-box-shadow: 4px 3px 9px 2px rgba(0,0,0,0.47);
+				box-shadow: 4px 3px 9px 2px rgba(0,0,0,0.47);
+	    		h5 {
+	    			background: $scarlet;
+	    			display: inline-block;
+				    font-size: 16px;
+				    line-height: 1.8;
+				    padding: 0px 16px;
+				    margin-bottom: 16px;
+				    color: #ffffff;
+	    		}
+	    		p {
+	    			font-size: 16px;
+	    			a {
+	    				margin: auto 7px;
+	    				@include red-anchor;
+	    			}
+	    		}
+	    	}
 	    }
 	   
 

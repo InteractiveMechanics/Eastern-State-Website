@@ -1,3 +1,15 @@
+@mixin red-anchor {
+  color: $scarlet;
+  border-bottom: 1px dotted $scarlet;
+  transition: $transition;
+  &:hover {
+    color: $dark-scarlet;
+    border-bottom: 1px dotted $dark-scarlet;
+    text-decoration: none;
+  }
+}
+
+
 // Media Queries
 
 @mixin screen-xxs {

@@ -1119,12 +1119,17 @@ select.form-control {
   color: #d2d2d4; }
 
 .slick-dots {
-  bottom: 50px;
+  bottom: 75px;
+  right: 500px;
+  width: auto;
   z-index: 50; }
   .slick-dots li {
     display: block; }
     .slick-dots li button:before {
-      font-size: 20px;
+      font-size: 17px;
+      color: #919396;
+      opacity: 0.5; }
+    .slick-dots li.slick-active button:before {
       color: #D62027; }
 
 .jumbotron {
@@ -1152,7 +1157,38 @@ select.form-control {
     height: 650px; }
   .hero-section .jumbotron .homepage-slider-single {
     height: 650px;
-    background-size: cover; }
+    background-size: cover;
+    position: relative; }
+    .hero-section .jumbotron .homepage-slider-single div {
+      background: #ffffff;
+      height: 250px;
+      width: 450px;
+      position: absolute;
+      bottom: 75px;
+      right: 35px;
+      padding: 15px 30px;
+      -webkit-box-shadow: 4px 3px 9px 2px rgba(0, 0, 0, 0.47);
+      -moz-box-shadow: 4px 3px 9px 2px rgba(0, 0, 0, 0.47);
+      box-shadow: 4px 3px 9px 2px rgba(0, 0, 0, 0.47); }
+      .hero-section .jumbotron .homepage-slider-single div h5 {
+        background: #D62027;
+        display: inline-block;
+        font-size: 16px;
+        line-height: 1.8;
+        padding: 0px 16px;
+        margin-bottom: 16px;
+        color: #ffffff; }
+      .hero-section .jumbotron .homepage-slider-single div p {
+        font-size: 16px; }
+        .hero-section .jumbotron .homepage-slider-single div p a {
+          margin: auto 7px;
+          color: #D62027;
+          border-bottom: 1px dotted #D62027;
+          transition: all 0.5s; }
+          .hero-section .jumbotron .homepage-slider-single div p a:hover {
+            color: #89070C;
+            border-bottom: 1px dotted #89070C;
+            text-decoration: none; }
   .hero-section .jumbotron .container2 {
     position: relative;
     color: #ffffff;
