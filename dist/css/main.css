@@ -60,7 +60,8 @@
   padding: 15px 20px;
   font-size: 20px;
   border-radius: 0px;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: all 0.5s; }
 
 .btn-white {
   color: #D62027;
@@ -69,7 +70,8 @@
   text-transform: uppercase;
   border-radius: 0px;
   font-size: 14px;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: all 0.5s; }
 
 .btn-white:hover,
 .btn-white:active,
@@ -86,7 +88,8 @@
   text-transform: uppercase;
   border-radius: 0px;
   font-size: 14px;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: all 0.5s; }
 
 .btn-red:hover,
 .btn-red:active,
@@ -516,22 +519,25 @@ body {
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
-  background-image: url(../../assets/hero-images/hero-image-02@2x.jpg); }
+  background-image: url(../../assets/hero-images/hero-image-02@2x.jpg);
+  margin-bottom: 5px; }
 .subpage-hero-section .generic-hero {
   background-size: 150%;
   background-position: initial;
   background-repeat: no-repeat;
-  background-image: url(../../assets/hero-images/hero-image-03@2x.jpg); }
+  background-image: url(../../assets/hero-images/hero-image-03@2x.jpg);
+  margin-bottom: 5px; }
 .subpage-hero-section .press-hero {
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
-  background-image: url(../../assets/hero-images/tbtw-hero-overlay@2x.png.png), url(../../assets/hero-images/tbtw-hero-sample2@2x.jpg.jpg); }
+  background-image: url(../../assets/hero-images/hero-image-01@2x.jpg);
+  margin-bottom: 5px; }
 .subpage-hero-section .schedule-hero {
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
-  background-image: url(../../assets/hero-images/tbtw-hero-overlay@2x.png.png), url(../../assets/hero-images/tbtw-hero-schedule@2x.jpg.jpg); }
+  background-image: url(../../assets/hero-images/tbtw-hero-schedule@2x.jpg.jpg); }
 .subpage-hero-section .search-hero {
   background-size: cover;
   background-position: top right;

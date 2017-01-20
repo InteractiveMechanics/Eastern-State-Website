@@ -67,6 +67,8 @@
   font-size:20px;
   border-radius:0px;
   font-weight:bold;
+  transition: $transition;
+
 }
 .btn-white { 
   color: $scarlet; 
@@ -76,6 +78,7 @@
   border-radius:0px;
   font-size:14px;
   font-weight:bold;
+  transition: $transition;
 } 
  
 .btn-white:hover, 
@@ -95,6 +98,7 @@
   border-radius:0px;
   font-size:14px;
   font-weight:bold;
+  transition: $transition;
 } 
  
 .btn-red:hover, 
