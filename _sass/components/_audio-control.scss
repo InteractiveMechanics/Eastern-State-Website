@@ -2,6 +2,12 @@
 	margin:45px 0;
 	padding: 20px;
     background: white;
+    h3 {
+    	color: $scarlet;
+    }
+    h6 {
+    	color: $gray;
+    }
 
 	#audio-container {
 	    width: 85px;

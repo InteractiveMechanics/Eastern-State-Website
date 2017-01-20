@@ -97,15 +97,15 @@ $(function(){
     });
 
     $('.panel-title a').click(function(){
-        var hasClass = $( this ).children("span").hasClass( "glyphicon-triangle-right" );
-        $(".glyphicon-triangle-bottom").addClass("glyphicon-triangle-right").removeClass("glyphicon-triangle-bottom");
+        var hasClass = $( this ).children("span").hasClass( "icon-accordion-right" );
+        $(".icon-accordion-down").addClass("icon-accordion-right").removeClass("icon-accordion-down");
 
         if(hasClass) {
-            $( this ).children("span").addClass("glyphicon-triangle-bottom");
-            $( this ).children("span").removeClass("glyphicon-triangle-right");
+            $( this ).children("span").addClass("icon-accordion-down");
+            $( this ).children("span").removeClass("icon-accordion-right");
         } else {
-            $( this ).children("span").addClass("glyphicon-triangle-right");
-            $( this ).children("span").removeClass("glyphicon-triangle-bottom");
+            $( this ).children("span").addClass("icon-accordion-right");
+            $( this ).children("span").removeClass("icon-accordion-down");
         }
     });
 
@@ -113,7 +113,32 @@ $(function(){
             dots: true,
             arrows: false
     });
-    
+
+
+
+
+    var $window = $(window);
+    var $callout = $('#callout');
+  
+    $window.on('scroll', function() {
+        var startZone = $('header').offset().top + 255;
+        var endZone = $('footer').offset().top - $window.height() - 100;
+        
+        if ($window.scrollTop() > startZone && $window.scrollTop() < endZone) {
+            $callout.animate({ 'right': '0px' }, 150);
+        } else {
+           $callout.stop(true).animate({ 'right': '-450px' }, 150);
+        }
+
+
+    });
+
 
 
 });
+
+
+
+
+
+
