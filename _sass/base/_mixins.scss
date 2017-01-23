@@ -9,6 +9,16 @@
   }
 }
 
+@mixin input {
+  background: #ffffff;
+  border-radius: 0px;
+  padding: 20px 15px;
+  border: 0px;
+  border-bottom: 2px solid #dcdbdb;
+  font-style: italic;
+  font-weight: 300;
+}
+
 
 // Media Queries
 

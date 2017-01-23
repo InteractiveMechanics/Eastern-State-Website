@@ -542,7 +542,8 @@ body {
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
-  background-image: url(../../assets/hero-images/tbtw-hero-overlay@2x.png.png), url(../../assets/hero-images/tbtw-hero-sample2@2x.jpg.jpg); }
+  background-image: url(../../assets/hero-images/hero-image-01@2x.jpg);
+  margin-bottom: 5px; }
 .subpage-hero-section .calendar-hero {
   background-size: cover;
   background-position: top right;
@@ -1110,19 +1111,21 @@ footer {
   line-height: 1.6; }
 
 input[type="text"] {
-  background: #4c545c;
+  background: #ffffff;
   border-radius: 0px;
   padding: 20px 15px;
   border: 0px;
-  border-bottom: 2px solid #2c3135;
-  font-style: italic; }
+  border-bottom: 2px solid #dcdbdb;
+  font-style: italic;
+  font-weight: 300; }
 input[type="search"] {
-  background: #4c545c;
+  background: #ffffff;
   border-radius: 0px;
   padding: 20px 15px;
   border: 0px;
-  border-bottom: 2px solid #2c3135;
-  font-style: italic; }
+  border-bottom: 2px solid #dcdbdb;
+  font-style: italic;
+  font-weight: 300; }
 input[type="email"] {
   background: #4c545c;
   border-radius: 0px;
@@ -1444,15 +1447,13 @@ select.form-control {
     border-radius: 0px; }
 
 .search-page h3 {
-  font-weight: bold;
   font-size: 20px;
-  color: white; }
+  color: #231f20; }
 .search-page ul li {
   margin-bottom: 45px; }
   .search-page ul li p {
     margin-bottom: 35px; }
 .search-page .search-box p {
-  font-weight: bold;
   margin: 0 0 10px 0;
   line-height: 20px; }
 .search-page .search-box input {

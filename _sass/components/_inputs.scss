@@ -3,21 +3,11 @@ input {
     
 
     &[type="text"] {
-    	background: #4c545c;
-    	border-radius: 0px;
-    	padding: 20px 15px;
-    	border: 0px;
-    	border-bottom: 2px solid #2c3135;
-    	font-style: italic;
+    	@include input();
     }
 
     &[type="search"] {
-    	background: #4c545c;
-    	border-radius: 0px;
-    	padding: 20px 15px;
-    	border: 0px;
-    	border-bottom: 2px solid #2c3135;
-    	font-style: italic;
+    	@include input();
     }
 
     &[type="email"] {
