@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
     <link href="./dist/css/main.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -308,19 +309,23 @@
                     <div class="main-item">
 
                         <div class="row filter-row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 flex-container">
                                 <div class="pull-left">
                                     <div class="form-group">
                                         <label for="disabledTextInput">Filter by Category:</label>
-                                        <select class="form-control">
+                                        <select class="form-control selectpicker">
                                             <option>Example Option</option>
+                                            <option>Example #2</option>
+                                            <option>Example #3</option>
                                         </select>
                                     </div>
 
                                     <div class="form-group hidden-xs" style="margin-left:25px;">
                                         <label for="disabledTextInput">Filter by Tag:</label>
-                                        <select class="form-control">
-                                            <option>Example Option</option>
+                                        <select class="form-control selectpicker">
+                                            <option>Example A</option>
+                                            <option>Example B</option>
+                                            <option>Example C</option>
                                         </select>
                                     </div>
                                 </div>
@@ -601,36 +606,33 @@
                 <br />
 
                 <div class="form-group">
-                    <label for="disabledTextInput">Name: *</label>
-                    <input class="form-control grey-input" type="text" placeholder="Name" />
+                    <label for="disabledTextInput">Name: <sup>*</sup></label>
+                    <input class="form-control" type="text" placeholder="Name" />
                 </div>
 
                 <div class="form-group">
-                    <label for="disabledTextInput">Organization: *</label>
+                    <label for="disabledTextInput">Organization: <sup>*</sup></label>
                     <input class="form-control" type="text" placeholder="Organization" />
                 </div>
 
                 <div class="form-group">
-                    <label for="disabledTextInput">Email Address: *</label>
+                    <label for="disabledTextInput">Email Address: <sup>*</sup></label>
                     <input class="form-control" type="text" placeholder="Email" />
                 </div>
 
                 <div class="form-group">
-                    <label for="disabledTextInput">Explain how you plan to use this photo: *</label>
-                    <input class="form-control" type="text" placeholder="What's the photo for?" />
-                </div>
-
-                <div class="form-group">
-                    <label for="disabledTextInput">Explain how you plan to use this photo: *</label>
+                    <label for="disabledTextInput">Explain how you plan to use this photo: <sup>*</sup></label>
                     
-                    <select class="form-control">
-                        <option class="">This is the option you</option>
+                    <select class="form-control selectpicker">
+                        <option class="">Option A</option>
+                        <option>Option B</option>
+                        <option>Option C</option>
                     </select>  
 
                 </div>
 
                 <div class="form-group">
-                    <button class="btn btn-outline btn-white btn-large" data-dismiss="modal">Submit</button>
+                    <button class="btn btn-outline btn-white btn-large" type="submit" data-dismiss="modal">Submit</button>
                 </div>
             </div>
         </div>
@@ -641,7 +643,9 @@
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
     <script src="./js/classie.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

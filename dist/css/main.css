@@ -218,6 +218,11 @@ ul.social-icons {
 .no-right-padding {
   padding-right: 0px; }
 
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
 body {
   font-family: "Roboto", Georgia, sans-serif; }
 
@@ -1183,14 +1188,49 @@ select.form-control {
   text-transform: uppercase; }
 
 .form-control:focus {
-  border-color: rgba(214, 32, 39, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(214, 32, 39, 0.6); }
+  border-color: rgba(120, 120, 120, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(120, 120, 120, 0.6); }
+
+input[type=file]:focus, input[type=checkbox]:focus, input[type=radio]:focus {
+  outline: 5px auto #919396; }
 
 button[type='submit'] {
   padding: 15px 20px;
   font-weight: 300;
   font-family: 'roboto condensed';
   letter-spacing: 1px; }
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%; }
+
+.bootstrap-select.btn-group .dropdown-menu {
+  border-radius: 0px; }
+  .bootstrap-select.btn-group .dropdown-menu li {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    .bootstrap-select.btn-group .dropdown-menu li a {
+      font-weight: 300; }
+      .bootstrap-select.btn-group .dropdown-menu li a:hover, .bootstrap-select.btn-group .dropdown-menu li a:active, .bootstrap-select.btn-group .dropdown-menu li a:focus {
+        color: #D62027;
+        outline: none; }
+
+.bootstrap-select > .dropdown-toggle {
+  background: #ffffff;
+  border-radius: 0px;
+  padding: 20px 15px;
+  border: 0px;
+  border-bottom: 2px solid #dcdbdb;
+  font-style: italic;
+  font-weight: 300;
+  height: 34px;
+  font-style: initial; }
+
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+  bottom: 10px;
+  position: relative; }
+
+sup {
+  color: #D62027; }
 
 .slick-dots {
   bottom: 75px;
@@ -1205,6 +1245,11 @@ button[type='submit'] {
       opacity: 0.5; }
     .slick-dots li.slick-active button:before {
       color: #D62027; }
+
+.press-modal .modal-content {
+  background-color: #EFE9E0; }
+.press-modal button[type='submit'] {
+  margin-top: 15px; }
 
 .jumbotron {
   border-radius: 0px !important;

@@ -22,7 +22,7 @@ input {
 	input:hover,  
 	input:active,  
 	input:focus {
-	    outline:0px !important;
+	    outline: 0px !important;
 	    -webkit-appearance:none !important;
 	}
 }
@@ -64,9 +64,13 @@ select {
 
 .form-control {
 	&:focus {
-		border-color: rgba(214, 32, 39, 0.6);
-		box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(214,32,39, 0.6);
+		border-color: rgba(120, 120, 120, 0.6);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(120,120,120, 0.6);
 	}
+}
+
+input[type=file]:focus, input[type=checkbox]:focus, input[type=radio]:focus {
+	outline: 5px auto $gray;
 }
 
 button[type='submit'] {
@@ -74,4 +78,39 @@ button[type='submit'] {
     font-weight: 300;
     font-family: 'roboto condensed';
     letter-spacing: 1px;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+	width: 100%;
+}
+
+.bootstrap-select.btn-group .dropdown-menu  {
+	border-radius: 0px;
+		li {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			a {
+				font-weight: 300;
+				&:hover, &:active, &:focus {
+					color: $scarlet;
+					outline: none;
+				}
+			}
+		}
+}
+
+.bootstrap-select>.dropdown-toggle {
+	@include input();
+	height: 34px;
+	font-style: initial;
+}
+
+
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+	bottom: 10px;
+	position: relative;
+}
+
+sup {
+	color: $scarlet;
 }
