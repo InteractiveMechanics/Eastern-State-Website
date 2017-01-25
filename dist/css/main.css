@@ -212,6 +212,12 @@ ul.social-icons {
   margin-left: 5px;
   cursor: pointer; }
 
+.no-left-padding {
+  padding-left: 0px; }
+
+.no-right-padding {
+  padding-right: 0px; }
+
 body {
   font-family: "Roboto", Georgia, sans-serif; }
 
@@ -1131,12 +1137,13 @@ input[type="search"] {
   font-style: italic;
   font-weight: 300; }
 input[type="email"] {
-  background: #4c545c;
+  background: #ffffff;
   border-radius: 0px;
   padding: 20px 15px;
   border: 0px;
-  border-bottom: 2px solid #2c3135;
-  font-style: italic; }
+  border-bottom: 2px solid #dcdbdb;
+  font-style: italic;
+  font-weight: 300; }
 input.grey-input {
   background: #d1d2d4;
   color: #111; }
@@ -1171,8 +1178,18 @@ select.form-control {
 .form-group label {
   font-size: 14px !important;
   letter-spacing: 1px;
-  text-transform: none;
-  color: #d2d2d4; }
+  color: #919396;
+  text-transform: uppercase; }
+
+.form-control:focus {
+  border-color: rgba(214, 32, 39, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(214, 32, 39, 0.6); }
+
+button[type='submit'] {
+  padding: 15px 20px;
+  font-weight: 300;
+  font-family: 'roboto condensed';
+  letter-spacing: 1px; }
 
 .slick-dots {
   bottom: 75px;
@@ -1500,6 +1517,102 @@ select.form-control {
   .image-library-page .press-items .row > [class*='col-'] {
     display: flex;
     flex-direction: column; }
+
+.form-page .padded-box {
+  overflow: auto; }
+.form-page .radio {
+  display: inline-block;
+  margin-right: 25px; }
+  .form-page .radio label {
+    color: #231f20 !important;
+    font-weight: 300;
+    font-family: "Roboto", Georgia, sans-serif;
+    text-transform: none; }
+.form-page input[type='radio'] {
+  -webkit-appearance: none; }
+  .form-page input[type='radio']:after {
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 2px rgba(120, 120, 120, 0.5);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white; }
+  .form-page input[type='radio']:checked:after {
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #D62027;
+    box-shadow: 0px 1px 2px rgba(120, 120, 120, 0.5);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white; }
+.form-page input[type='checkbox'] {
+  -webkit-appearance: none; }
+  .form-page input[type='checkbox']:after {
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    left: -31px;
+    box-sizing: border-box;
+    border: none;
+    transition: border-color .2s;
+    box-shadow: 0px 1px 2px rgba(120, 120, 120, 0.5);
+    content: '\f00c';
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    left: -6px;
+    top: -3px;
+    color: transparent;
+    transition: color .2s;
+    position: absolute; }
+  .form-page input[type='checkbox']:checked:after {
+    color: #919396; }
+.form-page sup {
+  color: #D62027; }
+.form-page .form-group label {
+  margin-top: 20px; }
+.form-page .checkbox label {
+  color: #231f20;
+  text-transform: initial;
+  margin-left: 6px; }
+.form-page small {
+  font-style: italic;
+  line-height: 1.4; }
+.form-page .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%; }
+.form-page .bootstrap-select.btn-group .dropdown-menu {
+  border-radius: 0px; }
+  .form-page .bootstrap-select.btn-group .dropdown-menu li {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    .form-page .bootstrap-select.btn-group .dropdown-menu li a {
+      font-weight: 300; }
+      .form-page .bootstrap-select.btn-group .dropdown-menu li a:hover, .form-page .bootstrap-select.btn-group .dropdown-menu li a:active, .form-page .bootstrap-select.btn-group .dropdown-menu li a:focus {
+        color: #D62027;
+        outline: none; }
+.form-page .bootstrap-select > .dropdown-toggle {
+  background: #ffffff;
+  border-radius: 0px;
+  padding: 20px 15px;
+  border: 0px;
+  border-bottom: 2px solid #dcdbdb;
+  font-style: italic;
+  font-weight: 300;
+  height: 34px;
+  font-style: initial; }
+.form-page .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+  bottom: 10px;
+  position: relative; }
 
 .tour-page {
   position: relative; }
