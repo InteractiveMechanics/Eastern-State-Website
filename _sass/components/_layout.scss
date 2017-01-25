@@ -368,7 +368,8 @@ label {
 	position: fixed;
 	width: 450px;
 	top: 450px;
-	right: -450px;
+	right: 0px;
+	opacity: 0;
 	background-color: #ffffff;
 	padding: 30px 70px 30px 30px;
 	color: $black;
