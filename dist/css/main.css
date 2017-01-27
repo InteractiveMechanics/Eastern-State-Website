@@ -256,6 +256,17 @@ body.has-active-menu {
   transition: transform 0.3s;
   z-index: 1000000000; }
 
+.navbar-inverse .navbar-toggle {
+  transition: all 0.5s;
+  border: none; }
+  .navbar-inverse .navbar-toggle:hover {
+    background-color: transparent; }
+    .navbar-inverse .navbar-toggle:hover .icon-bar {
+      background-color: #D62027; }
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #919396; }
+
 .overflow-menu {
   padding-top: 10px !important; }
   .overflow-menu > ul {
@@ -341,6 +352,9 @@ body.has-active-menu {
       color: #ffffff;
       display: inline-block;
       margin-right: 10px; }
+      @media (max-width: 767px) {
+        .mobile-buy-now-menu .mobile-buy-now-save h2 {
+          font-size: 22px; } }
     .mobile-buy-now-menu .mobile-buy-now-save svg {
       fill: #ffffff;
       height: 17px; }
@@ -442,6 +456,9 @@ body {
   background: #F9F5EF; }
   body main {
     padding: 0 45px; }
+    @media (max-width: 767px) {
+      body main {
+        padding: 0px; } }
   body .calendar .month-name {
     font-size: 21px; }
 
@@ -1056,10 +1073,16 @@ label {
 
 footer {
   padding: 0px 45px; }
+  @media (max-width: 767px) {
+    footer {
+      padding: 0px; } }
   footer .row {
     margin: 0px; }
   footer .col-sm-12 {
     display: flex; }
+    @media (max-width: 767px) {
+      footer .col-sm-12 {
+        display: initial; } }
   footer .footer-detail {
     padding: 30px;
     margin: 0;
@@ -1076,6 +1099,18 @@ footer {
     margin-right: 5px;
     margin-left: -15px;
     width: calc(50% + 15px); }
+    @media (max-width: 991px) {
+      footer .map-image {
+        position: relative; } }
+    @media (max-width: 767px) {
+      footer .map-image {
+        width: 100%;
+        min-height: 100%;
+        margin-left: 0px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      footer .map-image {
+        height: initial;
+        flex: 1; } }
     footer .map-image img {
       margin-bottom: 20px;
       width: 185px; }
@@ -1086,6 +1121,13 @@ footer {
     footer .map-image address {
       font-size: 16px;
       color: #231f20; }
+      @media (max-width: 767px) {
+        footer .map-image address {
+          margin-left: 15px; } }
+      @media (max-width: 991px) {
+        footer .map-image address {
+          position: absolute;
+          bottom: 10px; } }
       footer .map-image address a {
         color: #D62027;
         border-bottom: 1px dotted #D62027;
@@ -1099,15 +1141,34 @@ footer {
     height: 275px;
     margin-right: -15px;
     width: calc(50% + 15px); }
+    @media (max-width: 767px) {
+      footer .newsletter-signup {
+        width: 100%;
+        height: 100%;
+        margin-right: 0px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      footer .newsletter-signup {
+        height: initial;
+        flex: 1; } }
     footer .newsletter-signup h2 {
       font-weight: 200;
       color: white;
       margin-bottom: 20px; }
+      @media (max-width: 767px) {
+        footer .newsletter-signup h2 {
+          font-size: 24px; } }
     footer .newsletter-signup input {
       background: #d1d2d4;
       color: #111;
       font-style: italic;
       border-bottom: none; }
+    @media (max-width: 1439px) {
+      footer .newsletter-signup .form-inline {
+        display: flex;
+        justify-content: space-between; } }
+    @media (max-width: 991px) {
+      footer .newsletter-signup .form-inline .input-group > .form-control {
+        width: 100%; } }
     footer .newsletter-signup .input-group {
       width: 100%; }
     footer .newsletter-signup .btn-white {
@@ -1115,10 +1176,19 @@ footer {
       padding-left: 25px;
       padding-right: 25px;
       margin-left: 10px; }
+      @media (max-width: 991px) {
+        footer .newsletter-signup .btn-white {
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-left: 5px; } }
     footer .newsletter-signup .form-area {
       margin-bottom: 30px; }
       footer .newsletter-signup .form-area .form-group {
         width: 72%; }
+        @media (max-width: 991px) {
+          footer .newsletter-signup .form-area .form-group {
+            width: 66%;
+            display: inline-block; } }
         footer .newsletter-signup .form-area .form-group button {
           float: right; }
 
@@ -1237,8 +1307,23 @@ sup {
   right: 500px;
   width: auto;
   z-index: 50; }
+  @media (max-width: 991px) {
+    .slick-dots {
+      bottom: 0px; } }
+  @media (max-width: 767px) {
+    .slick-dots {
+      right: 74%; } }
+  @media (max-width: 480px) {
+    .slick-dots {
+      right: 51%; } }
   .slick-dots li {
     display: block; }
+    @media (max-width: 991px) {
+      .slick-dots li {
+        display: inline-block; } }
+    @media (max-width: 767px) {
+      .slick-dots li {
+        display: inline-block; } }
     .slick-dots li button:before {
       font-size: 17px;
       color: #919396;
@@ -1272,12 +1357,25 @@ sup {
   margin-bottom: 5px;
   background-size: cover;
   background: none; }
+  @media (max-width: 991px) {
+    .hero-section .jumbotron {
+      overflow: initial;
+      height: 605px; } }
+  @media (max-width: 767px) {
+    .hero-section .jumbotron {
+      height: 400px; } }
   .hero-section .jumbotron #homepage-slider {
     height: 650px; }
   .hero-section .jumbotron .homepage-slider-single {
     height: 650px;
     background-size: cover;
     position: relative; }
+    @media (max-width: 991px) {
+      .hero-section .jumbotron .homepage-slider-single {
+        height: 605px; } }
+    @media (max-width: 767px) {
+      .hero-section .jumbotron .homepage-slider-single {
+        height: 400px; } }
     .hero-section .jumbotron .homepage-slider-single div {
       background: #ffffff;
       height: 250px;
@@ -1289,6 +1387,15 @@ sup {
       -webkit-box-shadow: 4px 3px 9px 2px rgba(0, 0, 0, 0.47);
       -moz-box-shadow: 4px 3px 9px 2px rgba(0, 0, 0, 0.47);
       box-shadow: 4px 3px 9px 2px rgba(0, 0, 0, 0.47); }
+      @media (max-width: 991px) {
+        .hero-section .jumbotron .homepage-slider-single div {
+          bottom: 0px;
+          right: initial;
+          left: 23%; } }
+      @media (max-width: 767px) {
+        .hero-section .jumbotron .homepage-slider-single div {
+          width: 90%;
+          left: 5%; } }
       .hero-section .jumbotron .homepage-slider-single div h5 {
         background: #D62027;
         display: inline-block;
@@ -1382,6 +1489,10 @@ sup {
   padding: 35px;
   height: 400px;
   color: #231f20; }
+  @media (max-width: 991px) {
+    .about-section .jumbotron {
+      height: 100%;
+      color: #ffffff; } }
   .about-section .jumbotron h2 {
     font-weight: 200;
     font-size: 26px;
@@ -1403,8 +1514,17 @@ sup {
   color: white;
   margin-top: 5px;
   margin-bottom: 60px; }
+  @media (max-width: 767px) {
+    .mainpage-details-section {
+      margin-top: 0px; } }
   .mainpage-details-section .col-sm-12 {
     display: flex; }
+    @media (max-width: 767px) {
+      .mainpage-details-section .col-sm-12 {
+        display: initial; } }
+  @media (max-width: 767px) {
+    .mainpage-details-section .row {
+      margin-top: -25px !important; } }
   .mainpage-details-section h2 {
     font-weight: 300;
     margin-bottom: 25px; }
@@ -1413,6 +1533,10 @@ sup {
     background-size: cover;
     margin-left: -15px;
     margin-right: 5px; }
+    @media (max-width: 767px) {
+      .mainpage-details-section .details-block-1 {
+        margin-left: initial;
+        margin-right: initial; } }
   .mainpage-details-section .details-block-2 {
     background: url(../../assets/homepage-eventblock-02@2x.jpg) top right;
     background-size: cover; }
@@ -1421,6 +1545,10 @@ sup {
     background-size: cover;
     margin-right: -15px;
     margin-left: 5px; }
+    @media (max-width: 767px) {
+      .mainpage-details-section .details-block-3 {
+        margin-left: initial;
+        margin-right: initial; } }
   .mainpage-details-section .sub-detail {
     padding: 30px;
     text-align: left;
@@ -1786,7 +1914,7 @@ sup {
     display: block; }
 
   .hero-section .jumbotron {
-    padding: 100px 35px 0px 35px !important;
+    padding: 100px 0px 0px 0px !important;
     height: 700px; }
     .hero-section .jumbotron h1 {
       font-size: 60px;
@@ -1820,8 +1948,8 @@ sup {
     margin-left: 0px; }
 
   .hero-section .jumbotron {
-    padding: 60px 35px 20px 35px !important;
-    height: 600px; }
+    padding: 60px 0px 20px 0px !important;
+    height: 400px; }
     .hero-section .jumbotron h1 {
       font-size: 40px;
       line-height: 55px;
@@ -1872,10 +2000,7 @@ sup {
     font-size: 1.3em !important; }
 
   footer .footer-detail {
-    padding: 35px;
-    padding-bottom: 0px; }
-    footer .footer-detail input {
-      width: 250px !important; }
+    padding: 30px; }
 
   .calendar .month-name {
     font-size: 12px !important; }

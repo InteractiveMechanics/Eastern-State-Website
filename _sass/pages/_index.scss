@@ -27,6 +27,13 @@
 	   margin-bottom: 5px;
 	   background-size: cover;
 	   background:none;
+	   @include screen-ltmd {
+	   		overflow: initial;
+	   		height: 605px;
+	   }
+	   @include screen-xs {
+	   		height: 400px;
+	   }
 	    
 	    #homepage-slider {
 	    	height: 650px;
@@ -36,6 +43,12 @@
 	    	height: 650px;
 	    	background-size: cover;
 	    	position: relative;
+	    	@include screen-ltmd {
+	    		height: 605px;
+	    	}
+	    	@include screen-xs {
+	    		height: 400px;
+	    	}
 	    	div {
 	    		background: #ffffff;
 	    		height: 250px;
@@ -47,6 +60,15 @@
 	    		-webkit-box-shadow: 4px 3px 9px 2px rgba(0,0,0,0.47);
 				-moz-box-shadow: 4px 3px 9px 2px rgba(0,0,0,0.47);
 				box-shadow: 4px 3px 9px 2px rgba(0,0,0,0.47);
+				@include screen-ltmd {
+					bottom: 0px;
+					right: initial;
+					left: 23%;
+				}
+				@include screen-xs {
+					width: 90%;
+					left: 5%;
+				}
 	    		h5 {
 	    			background: $scarlet;
 	    			display: inline-block;
@@ -176,6 +198,10 @@
     	padding: 35px;
     	height:400px;
     	color: $black;
+    	@include screen-ltmd {
+    		height: 100%;
+    		color: #ffffff;
+    	}
 
     	h2 {
     		font-weight: 200;
@@ -207,9 +233,20 @@
 	color:white;
 	margin-top: 5px;
 	margin-bottom: 60px;
+	@include screen-xs {
+		margin-top: 0px;
+	}
 
 	.col-sm-12 {
 		display: flex;
+		@include screen-xs {
+			display: initial;
+		}
+	}
+	.row {
+		@include screen-xs {
+			margin-top: -25px !important;
+		}
 	}
 
 
@@ -223,6 +260,10 @@
     	background-size: cover;
     	margin-left: -15px;
     	margin-right: 5px;
+    	@include screen-xs {
+    		margin-left: initial;
+    		margin-right: initial;
+    	}
     	
 	}
 
@@ -236,6 +277,10 @@
     	background-size: cover;
     	margin-right: -15px;
     	margin-left: 5px;
+    		@include screen-xs {
+    		margin-left: initial;
+    		margin-right: initial;
+    	}
 	}
 
 	.sub-detail {

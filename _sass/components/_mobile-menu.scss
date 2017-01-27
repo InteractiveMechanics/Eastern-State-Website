@@ -13,6 +13,23 @@ body {
   z-index: 1000000000;
 }
 
+.navbar-inverse .navbar-toggle {
+    transition: $transition;
+    border: none;
+    &:hover {
+        background-color: transparent;
+        .icon-bar {
+            background-color: $scarlet;
+        }
+    }
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: $gray;
+}
+
+
+
 
 .overflow-menu {
 	padding-top:10px !important;
@@ -143,6 +160,9 @@ body {
             color: #ffffff;
             display: inline-block;
             margin-right: 10px;
+            @include screen-xs {
+                font-size: 22px;
+            }
         }
         svg {
             fill: #ffffff;

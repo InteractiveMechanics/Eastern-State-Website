@@ -4,8 +4,23 @@
 	right: 500px;
 	width: auto;
 	z-index: 50;
+	@include screen-ltmd {
+		bottom: 0px;
+	}
+	@include screen-xs {
+		right: 74%;
+	}
+	@include screen-xxs {
+		right: 51%;
+	}
 	li {
 		display: block;
+		@include screen-ltmd {
+			display: inline-block;
+		}
+		@include screen-xs {
+			display: inline-block;
+		}
 		button {
 			&:before {
 				font-size: 17px;

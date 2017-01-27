@@ -1,11 +1,17 @@
 footer {
 	padding: 0px 45px;
+	@include screen-xs {
+		padding: 0px;
+	}
 	.row {
 		margin: 0px;
 	}
 	
 	.col-sm-12 {
 		display: flex;
+		@include screen-xs {
+			display: initial;
+		}
 	}
 	
 	.footer-detail {
@@ -28,6 +34,18 @@ footer {
     	margin-right: 5px;
    		margin-left: -15px;
     	width: calc(50% + 15px);
+    	@include screen-ltmd {
+    		position: relative;
+    	}
+    	@include screen-xs {
+    		width: 100%;
+    		min-height: 100%;
+    		margin-left: 0px;
+    	}
+    	@include screen-sm {
+    		height: initial;
+    		flex: 1;
+    	}
 
     	img {
     		margin-bottom:20px;
@@ -43,6 +61,13 @@ footer {
     	address { 
     		font-size:16px;
     		color: $black;
+    		@include screen-xs {
+    			margin-left: 15px;
+    		}
+    		@include screen-ltmd {
+    			position: absolute;
+    			bottom: 10px;
+    		}
     		a {
     			color: $scarlet;
     			border-bottom: 1px dotted $scarlet;
@@ -61,11 +86,23 @@ footer {
     	height:275px;
     	margin-right: -15px;
     	width: calc(50% + 15px);
+    	@include screen-xs {
+    		width: 100%;
+    		height: 100%;
+    		margin-right: 0px;
+    	}
+    	@include screen-sm {
+    		height: initial;
+    		flex: 1;
+    	}
 
     	h2 {
 			font-weight:200;
 			color:white;
 			margin-bottom:20px;
+			@include screen-xs {
+				font-size: 24px;
+			}
 		}
 
 		input {
@@ -76,6 +113,19 @@ footer {
 			border-bottom: none;
 		}
 		
+		.form-inline {
+			@include screen-ltxl {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+
+		.form-inline .input-group>.form-control {
+			@include screen-ltmd {
+				width: 100%;
+			}
+		}
+
 		.input-group {
 			width: 100%;
 		}
@@ -85,12 +135,21 @@ footer {
 		    padding-left: 25px;
 		    padding-right: 25px;
 		    margin-left: 10px;
+		    @include screen-ltmd {
+		    	padding-left: 20px;
+		    	padding-right: 20px;
+		    	margin-left: 5px;
+		    }
 		}
 
 	    .form-area {
 	    	margin-bottom:30px;
 	    	.form-group {
 	    		width: 72%;
+	    		@include screen-ltmd {
+	    			width: 66%;
+	    			display: inline-block;
+	    		}
 	    		button {
 	    			float: right;
 	    		}

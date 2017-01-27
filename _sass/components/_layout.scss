@@ -2,11 +2,11 @@ body {
 	background: $buff;
 
 	main {
-		.container-fluid {
-	}
-	
-			padding:0 45px;
+		padding: 0 45px;
+		@include screen-xs {
+			padding: 0px;
 		}
+	}
 	.calendar {
 		.month-name {
 			font-size:21px;
