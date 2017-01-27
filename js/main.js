@@ -130,12 +130,10 @@ $(function(){
         // checks if the user's position is past the startZone and further from the top than the endZone
         if ($window.scrollTop() > startZone && $window.scrollTop() < endZone) {
             // if the condition is true, the box slides from the right to the edge of the page and this takes 150 milliseconds
-            //$callout.animate({ 'right': '0px' }, 150);
             $callout.animate({'opacity': '1.0'}, 175);
 
         } else {
             // if the condition is false or the box is in the middle of animating, it is stopped and the callout then slides off the right hand side of the page, takeing 150 milliseconds
-           //$callout.stop(true).animate({ 'right': '-450px' }, 150);
            $callout.stop(true).animate({'opacity': '0'}, 175);
         }
 

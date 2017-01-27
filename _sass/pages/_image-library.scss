@@ -6,7 +6,7 @@
 		
 		&:hover {
 			> .overlay {
-			    background: $red;
+			    background: $scarlet;
 			}
 		}
 	}
@@ -16,9 +16,15 @@
 	    bottom: 0;
 	    background: rgba(0,0,0,.75);
 	    color:white;
-	    font-size: 25px;
-    	padding: 10px 17px;
+	    height: 30px;
+	    width: 30px;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
     	cursor:pointer;
+    	.glyphicon {
+    		display: block;
+    	}
 	}
 
 	.caption {
@@ -31,6 +37,17 @@
 
 	hr {
 		margin-bottom:50px;
+	}
+
+
+
+	.bootstrap-select {
+		@include screen-xs {
+			width: 90% !important;
+		}
+		.dropdown-toggle {
+			height: 50px;
+		}
 	}
 
 	.filter-row {
@@ -59,4 +76,12 @@
 			}
 		}
 	}
+
+	.btn-white {
+		position: relative;
+		top: 10px;
+		height: 50px;
+	}
+
+
 }

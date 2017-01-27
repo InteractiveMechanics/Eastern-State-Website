@@ -28,7 +28,7 @@
 
 	h2 {
 		margin-top:0px;
-		color:white;
+		color: $black;
 		font-weight:bold;
 	}
 
@@ -57,7 +57,7 @@
 		font-style:italic;
 
 		strong {
-			color:#aaa;
+			color: $black;
 		}
 	}
 	p {
@@ -66,10 +66,10 @@
 		}
 
 		&.press-release-detail {
-			color: #aaa;
+			color: $gray;
 
 			strong {
-				color:white;
+				color: $black;
 			}
 		}
 	}
@@ -77,7 +77,7 @@
 	h2 {
 		margin-top:0px;
 		font-weight:bold;
-		color:white;
+		color: $black;
 	}
 
 	.press-image {
