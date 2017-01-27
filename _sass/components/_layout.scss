@@ -95,6 +95,9 @@ body {
 	.breadcrumb {
 		background:none;
 		padding: 0px;
+		@include screen-ltmd {
+			margin-bottom: 5px;
+		}
 		
 		li {
 			
@@ -130,6 +133,14 @@ body {
 		color:white;
 		font-family: $sans-serif;
 	    text-shadow: 3px 5px 0px rgba(25, 25, 25, 0.3);
+	    @include screen-xs {
+	    	font-size: 60px;
+    		text-transform: initial;
+    		margin-top: 0px;
+	    }
+	    @include screen-xxs {
+	    	font-size: 50px;
+	    }
 	}
 
 	.parking-hero {
@@ -184,10 +195,21 @@ body {
 		position:relative;
 		padding:65px 105px;
 		//border-bottom: 2px solid black;
+		@include screen-ltmd {
+			padding: 50px 30px;
+		}
 		    
 		section {
 			position:absolute;
 			bottom: 100px;
+			@include screen-ltmd {
+				position: relative;
+			    bottom: initial;
+			    display: flex;
+			    flex-direction: column;
+			    height: 100%;
+			    justify-content: flex-end;
+			}
 		}
 	}
 }
@@ -257,6 +279,9 @@ body {
 .padded-box {
 	padding: 65px 105px;
 	background: $dark-buff;
+	@include screen-ltmd {
+		padding: 65px 30px;
+	}
 
 	p {
 		color: $black;

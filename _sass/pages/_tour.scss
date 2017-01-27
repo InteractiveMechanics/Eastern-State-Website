@@ -5,6 +5,10 @@
 		box-sizing: content-box;
 		padding: 60px 45px;
 		height: 500px;
+		@include screen-xs {
+			padding: 60px 30px;
+			height: 100%;
+		}
 	}
 
 	.modal, .modal-backdrop {
@@ -12,12 +16,20 @@
     	left: auto;
     	height: 100%;
     	background-color: transparent;
+    	@include screen-xs {
+    		position: relative !important;
+    		padding-right: 0px !important;
+    	}
 	}
 	.modal-dialog {
 		width: 33%;
 		float: right;
 		right: 45px;
 		margin-top: 40px;
+		@include screen-xs {
+			width: 100%;
+			right: 0px;
+		}
 	}
 
 	.modal-body {
