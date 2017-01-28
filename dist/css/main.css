@@ -1356,7 +1356,8 @@ footer {
       footer .map-image {
         width: 100%;
         min-height: 100%;
-        margin-left: 0px; } }
+        margin-left: 0px;
+        margin-bottom: 15px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       footer .map-image {
         height: initial;
@@ -1559,13 +1560,14 @@ sup {
   z-index: 50; }
   @media (max-width: 991px) {
     .slick-dots {
-      bottom: 0px; } }
+      bottom: 15px; } }
   @media (max-width: 767px) {
     .slick-dots {
-      right: 74%; } }
+      right: 62%; } }
   @media (max-width: 480px) {
     .slick-dots {
-      right: 51%; } }
+      right: initial;
+      left: 41px; } }
   .slick-dots li {
     display: block; }
     @media (max-width: 991px) {
@@ -1625,7 +1627,7 @@ sup {
         height: 605px; } }
     @media (max-width: 767px) {
       .hero-section .jumbotron .homepage-slider-single {
-        height: 400px; } }
+        height: 500px; } }
     .hero-section .jumbotron .homepage-slider-single div {
       background: #ffffff;
       height: 250px;
@@ -1639,7 +1641,7 @@ sup {
       box-shadow: 4px 3px 9px 2px rgba(0, 0, 0, 0.47); }
       @media (max-width: 991px) {
         .hero-section .jumbotron .homepage-slider-single div {
-          bottom: 0px;
+          bottom: 50px;
           right: initial;
           left: 23%; } }
       @media (max-width: 767px) {
@@ -1742,7 +1744,9 @@ sup {
   @media (max-width: 991px) {
     .about-section .jumbotron {
       height: 100%;
-      color: #ffffff; } }
+      color: #ffffff;
+      margin-top: 15px;
+      margin-bottom: 15px; } }
   .about-section .jumbotron h2 {
     font-weight: 200;
     font-size: 26px;
@@ -1786,7 +1790,9 @@ sup {
     @media (max-width: 767px) {
       .mainpage-details-section .details-block-1 {
         margin-left: initial;
-        margin-right: initial; } }
+        margin-right: initial;
+        margin-top: 0px;
+        margin-bottom: 15px; } }
   .mainpage-details-section .details-block-2 {
     background: url(../../assets/homepage-eventblock-02@2x.jpg) top right;
     background-size: cover; }
@@ -1798,7 +1804,9 @@ sup {
     @media (max-width: 767px) {
       .mainpage-details-section .details-block-3 {
         margin-left: initial;
-        margin-right: initial; } }
+        margin-right: initial;
+        margin-top: 15px;
+        margin-bottom: 0px; } }
   .mainpage-details-section .sub-detail {
     padding: 30px;
     text-align: left;
@@ -2224,14 +2232,14 @@ sup {
     margin-left: 0px; }
 
   .hero-section .jumbotron {
-    padding: 60px 0px 20px 0px !important;
-    height: 400px; }
+    padding: 60px 0px 0px 0px !important;
+    height: 100%; }
     .hero-section .jumbotron h1 {
       font-size: 40px;
       line-height: 55px;
       text-align: center; }
     .hero-section .jumbotron p {
-      text-align: center; }
+      text-align: left; }
       .hero-section .jumbotron p a {
         margin-bottom: 20px;
         display: inline-block; }

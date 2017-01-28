@@ -125,8 +125,8 @@
 	.hero-section {
 
 		.jumbotron {
-			padding: 60px 0px 20px 0px !important;
-			height:400px;
+			padding: 60px 0px 0px 0px !important;
+			height: 100%;
 
 			h1 {
 				font-size: 40px;
@@ -135,7 +135,7 @@
 			}
 
 			p {
-				text-align:center;
+				text-align:left;
 
 				a {
 					margin-bottom:20px;

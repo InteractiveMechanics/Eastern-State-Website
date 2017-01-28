@@ -5,13 +5,14 @@
 	width: auto;
 	z-index: 50;
 	@include screen-ltmd {
-		bottom: 0px;
+		bottom: 15px;
 	}
 	@include screen-xs {
-		right: 74%;
+		right: 62%;
 	}
 	@include screen-xxs {
-		right: 51%;
+		right: initial;
+		left: 41px;
 	}
 	li {
 		display: block;
