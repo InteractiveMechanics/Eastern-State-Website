@@ -4,7 +4,8 @@
 	.padded-box {
 		box-sizing: content-box;
 		padding: 60px 45px;
-		height: 500px;
+		height: 100%;
+		margin-bottom: 5px;
 		@include screen-xs {
 			padding: 60px 30px;
 			height: 100%;

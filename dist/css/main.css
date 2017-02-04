@@ -726,6 +726,8 @@ body {
       color: #D62027 !important;
       text-decoration: none;
       border-bottom: 2px solid #D62027; }
+  .site-switcher-section ul > li:first-of-type a:hover {
+    border-bottom: 2px solid transparent; }
 
 .mobile-buy-now {
   background-color: #DB322B;
@@ -776,36 +778,36 @@ body {
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
-  background-image: url(../../assets/hero-images/hero-image-02@2x.jpg);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.65) 100%), url(../../assets/hero-images/hero-image-02@2x.jpg);
   margin-bottom: 5px; }
 .subpage-hero-section .generic-hero {
   background-size: 150%;
   background-position: initial;
   background-repeat: no-repeat;
-  background-image: url(../../assets/hero-images/hero-image-03@2x.jpg);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.65) 100%), url(../../assets/hero-images/hero-image-03@2x.jpg);
   margin-bottom: 5px; }
 .subpage-hero-section .press-hero {
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
-  background-image: url(../../assets/hero-images/hero-image-01@2x.jpg);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.65) 100%), url(../../assets/hero-images/hero-image-01@2x.jpg);
   margin-bottom: 5px; }
 .subpage-hero-section .schedule-hero {
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
-  background-image: url(../../assets/hero-images/tbtw-hero-schedule@2x.jpg.jpg); }
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.65) 100%), url(../../assets/hero-images/tbtw-hero-schedule@2x.jpg.jpg); }
 .subpage-hero-section .search-hero {
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
-  background-image: url(../../assets/hero-images/hero-image-01@2x.jpg);
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.65) 100%), url(../../assets/hero-images/hero-image-01@2x.jpg);
   margin-bottom: 5px; }
 .subpage-hero-section .calendar-hero {
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
-  background-image: url(../../assets/hero-images/tbtw-hero-overlay@2x.png.png), url(../../assets/hero-images/tbtw-hero-sample@2x.jpg.jpg); }
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.65) 100%), url(../../assets/hero-images/tbtw-hero-sample@2x.jpg.jpg); }
 .subpage-hero-section .subpage-hero-details {
   height: 446px;
   position: relative;
@@ -996,11 +998,13 @@ label {
 .audio-section {
   margin: 45px 0;
   padding: 20px;
-  background: white; }
-  .audio-section h3 {
+  background: #F9F5EF; }
+  .audio-section h2 {
     color: #D62027; }
-  .audio-section h6 {
-    color: #919396; }
+  .audio-section h5 {
+    color: #919396;
+    text-transform: uppercase;
+    font-family: "Roboto", Georgia, sans-serif; }
   .audio-section #audio-container {
     width: 85px;
     height: 85px;
@@ -1328,6 +1332,10 @@ footer {
       padding: 0px; } }
   footer .row {
     margin: 0px; }
+  footer ul.social-icons {
+    margin-bottom: 0px;
+    padding-left: 0px;
+    display: flex; }
   footer .col-sm-12 {
     display: flex; }
     @media (max-width: 767px) {
@@ -1512,8 +1520,14 @@ select.form-control {
   border-color: rgba(120, 120, 120, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(120, 120, 120, 0.6); }
 
-input[type=file]:focus, input[type=checkbox]:focus, input[type=radio]:focus {
+input[type=file]:focus, input[type=checkbox]:focus {
   outline: 5px auto #919396; }
+
+input[type=radio]:focus {
+  outline: none; }
+
+.radio input[type=radio] {
+  margin-left: -25px; }
 
 button[type='submit'] {
   padding: 15px 20px;
@@ -2027,10 +2041,14 @@ sup {
   color: #D62027; }
 .form-page .form-group label {
   margin-top: 20px; }
+.form-page .checkbox-group-wrapper {
+  float: left;
+  margin-top: 15px; }
 .form-page .checkbox label {
   color: #231f20;
   text-transform: initial;
-  margin-left: 6px; }
+  margin-left: 6px;
+  margin-top: 0px; }
 .form-page small {
   font-style: italic;
   line-height: 1.4; }
@@ -2065,7 +2083,8 @@ sup {
   .tour-page .padded-box {
     box-sizing: content-box;
     padding: 60px 45px;
-    height: 500px; }
+    height: 100%;
+    margin-bottom: 5px; }
     @media (max-width: 767px) {
       .tour-page .padded-box {
         padding: 60px 30px;

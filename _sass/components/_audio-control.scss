@@ -1,12 +1,15 @@
 .audio-section {
 	margin:45px 0;
 	padding: 20px;
-    background: white;
-    h3 {
+    background: $buff;
+    
+    h2 {
     	color: $scarlet;
     }
-    h6 {
+    h5 {
     	color: $gray;
+    	text-transform: uppercase;
+    	font-family: $roboto;
     }
 
 	#audio-container {

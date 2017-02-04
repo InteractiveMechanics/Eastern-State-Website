@@ -7,6 +7,14 @@ footer {
 		margin: 0px;
 	}
 	
+	ul.social-icons {
+		margin-bottom: 0px;
+		padding-left: 0px;
+		display: flex;
+	}
+
+	
+	
 	.col-sm-12 {
 		display: flex;
 		@include screen-xs {
