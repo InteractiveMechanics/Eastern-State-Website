@@ -12,7 +12,7 @@
 	}
 	@include screen-xxs {
 		right: initial;
-		left: 41px;
+		left: 14px;
 	}
 	li {
 		display: block;
@@ -22,10 +22,13 @@
 		@include screen-xs {
 			display: inline-block;
 		}
+		@include screen-xxs {
+			margin: 0 3px;
+		}
 		button {
 			&:before {
 				font-size: 17px;
-				color: $gray;
+				color: #ffffff;
 				opacity: 0.5;
 			}
 		}
@@ -33,6 +36,7 @@
 			button {
 				&:before {
 					color: $scarlet;
+					opacity: 1.0;
 				}
 			}
 		}

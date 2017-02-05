@@ -47,6 +47,9 @@
 		}
 		.dropdown-toggle {
 			height: 50px;
+			&:focus {
+				outline: 5px auto $gray!important;
+			}
 		}
 	}
 

@@ -113,11 +113,12 @@ button[type='submit'] {
 	@include input();
 	height: 34px;
 	font-style: initial;
+	padding: 0px 10px; 
 }
 
 
 .bootstrap-select.btn-group .dropdown-toggle .filter-option {
-	bottom: 10px;
+	bottom: 	0px;
 	position: relative;
 }
 
