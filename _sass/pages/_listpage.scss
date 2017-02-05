@@ -4,9 +4,14 @@
 			margin-bottom: 65px;
 		}
 	}
-	p {
+	h6 {
 		&.sub-headline {
 			margin-bottom:10px;
+			margin-top: 0px;
+			@include screen-xs {
+				margin-top: 10px;
+			}
+			
 		}
 	}
 

@@ -210,7 +210,7 @@ body {
 		//border-bottom: 2px solid black;
 		@include screen-ltmd {
 			padding: 50px 30px;
-			height: 100%;
+			height: 250px;
 		}
 		    
 		section {
@@ -294,7 +294,7 @@ body {
 	padding: 65px 105px;
 	background: $dark-buff;
 	@include screen-ltmd {
-		padding: 65px 30px;
+		padding: 30px;
 	}
 
 	p {
