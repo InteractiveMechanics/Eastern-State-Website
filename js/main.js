@@ -141,17 +141,26 @@ $(function(){
     });
 
 
-      $('.temporary-marker').click(function () {
-        $('#tour-modal').modal();
+	
+	$('.marker').click(function() {
+		$(this).addClass('booger');
+	})
+	
+	
+	$('#tour-modal').on('hidden.bs.modal', function () {
+    	$('.marker').removeClass('booger');
+	})
+	
+	
       
       //appending modal background inside the bigform-content
         $('.modal-backdrop').appendTo('.tour-page');
       //removing body classes to able click events
-        $('body').removeClass();
-    });
-
-
-
+        //$('body').removeClass();
+      
+    
+    
+    
 });
 
 

@@ -24,10 +24,22 @@ h4 {
 h6 {
 	text-transform: uppercase;
 	font-family: $roboto;
+	color: $gray;
 }
 
-p {
+p, ul, ol {
 	font-family: $roboto;
+	font-weight: 300;
+}
+
+ul, ol {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+button {
+	font-family: $sans-serif;
+	letter-spacing: 1px;
 	font-weight: 300;
 }
 

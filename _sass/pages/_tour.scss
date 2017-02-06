@@ -36,7 +36,7 @@
 	.modal-body {
 		padding: 0px;
 		.iframe-wrapper {
-			height: 200px;
+			height: 250px;
 			overflow: hidden;
 		}
 		iframe {
@@ -51,8 +51,8 @@
 	}
 
 	.modal-text-wrapper {
-		padding: 0px 15px 15px 15px;
-		height: 320px;
+		padding: 15px 30px 30px 30px;
+		height: 275px;
 		overflow-x: scroll;
 
 	}
@@ -62,19 +62,38 @@
 	width: 100%;
 }
 
-.temporary-marker {
+.marker {
 	// NEED MARKER SVG
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background-color: #ffffff;
+	svg {
+		fill: #ffffff;
+	}
 	z-index: 30;
+	background-color: transparent;
+	border: none;
 	transition: all 0.25s linear;
 	position: absolute;
 	&:hover {
-		background-color: $scarlet;
+		svg {
+			fill: $scarlet;
+		}
+		
+	}
+	&:focus {
+		outline: none;
+		fill: $scarlet;
+	}
+	.booger {
+		fill: $scarlet;
+	}
+	
+}
+
+.booger {
+	svg {
+	fill: $scarlet;
 	}
 }
+
 
 #marker-1 {
 	top: 12%;
