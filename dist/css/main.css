@@ -1844,7 +1844,8 @@ sup {
     background: url(../../assets/homepage-eventblock-01@2x.jpg) top right;
     background-size: cover;
     margin-left: -15px;
-    margin-right: 5px; }
+    margin-right: 5px;
+    flex: 1; }
     @media (max-width: 767px) {
       .mainpage-details-section .details-block-1 {
         margin-left: initial;
@@ -1858,7 +1859,8 @@ sup {
     background: url(../../assets/homepage-eventblock-03@2x.jpg) top right;
     background-size: cover;
     margin-right: -15px;
-    margin-left: 5px; }
+    margin-left: 5px;
+    flex: 1; }
     @media (max-width: 767px) {
       .mainpage-details-section .details-block-3 {
         margin-left: initial;
@@ -1870,7 +1872,8 @@ sup {
     text-align: left;
     min-height: 275px;
     z-index: 100000000;
-    position: relative; }
+    position: relative;
+    flex: 1; }
     .mainpage-details-section .sub-detail h6 {
       margin-bottom: 1em; }
     .mainpage-details-section .sub-detail p {

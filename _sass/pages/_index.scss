@@ -265,6 +265,7 @@
     	background-size: cover;
     	margin-left: -15px;
     	margin-right: 5px;
+    	flex: 1;
     	@include screen-xs {
     		margin-left: initial;
     		margin-right: initial;
@@ -284,6 +285,7 @@
     	background-size: cover;
     	margin-right: -15px;
     	margin-left: 5px;
+    	flex: 1;
     		@include screen-xs {
     		margin-left: initial;
     		margin-right: initial;
@@ -298,6 +300,7 @@
 	    min-height: 275px;
 	    z-index: 100000000;
 	    position: relative;
+	    flex: 1;
 	    h6 {
 	    	margin-bottom: 1em;
 	    }
