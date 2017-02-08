@@ -14,10 +14,12 @@
 	.overlay {
 		position: absolute;
 	    bottom: 0;
+	    width: 55px;
+	    height: 55px;
 	    background: rgba(0,0,0,.75);
 	    color:white;
 	    font-size: 25px;
-		padding: 10px 17px;
+		padding: 13px 14px;
 		cursor: pointer;
     	.glyphicon {
     		display: block;

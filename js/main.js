@@ -143,12 +143,15 @@ $(function(){
 
 	
 	$('.marker').click(function() {
-		$(this).addClass('booger');
+		$(this).addClass('tour-modal-active');
+		initialize();
+		$('#tour-modal').modal('show');
+		$('.marker').not(this).removeClass('tour-modal-active');
 	})
 	
 	
 	$('#tour-modal').on('hidden.bs.modal', function () {
-    	$('.marker').removeClass('booger');
+    	$('.marker').removeClass('tour-modal-active');
 	})
 	
 	
@@ -157,8 +160,22 @@ $(function(){
         $('.modal-backdrop').appendTo('.tour-page');
       //removing body classes to able click events
         //$('body').removeClass();
-      
+        
+        
+    var panorama;
+    function initialize() {
+        panorama = new google.maps.StreetViewPanorama(
+            document.getElementById('street-view'),
+            {
+              position: {lat: 39.9683364, lng:-75.1726648},
+              pov: {heading: 165, pitch: 0},
+              zoom: 1,
+              zoomControl: true,
+              disableDefaultUI: true 
+            });
+    }
     
+        
     
     
 });
