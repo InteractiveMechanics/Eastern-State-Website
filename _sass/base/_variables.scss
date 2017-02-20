@@ -44,4 +44,4 @@ $screen-gtmd:       'min-width: 1200px';
 
 
 // Transition
-$transition:        all 0.5s;                                           // For consistent transition animations, use this
+$transition:        all 0.5s ease-in-out;                                           // For consistent transition animations, use this

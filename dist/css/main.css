@@ -74,7 +74,7 @@
   border-radius: 0px;
   font-size: 14px;
   font-size: 300;
-  transition: all 0.5s; }
+  transition: all 0.5s ease-in-out; }
 
 .btn-white:hover,
 .btn-white:active,
@@ -92,7 +92,7 @@
   border-radius: 0px;
   font-size: 14px;
   font-weight: bold;
-  transition: all 0.5s; }
+  transition: all 0.5s ease-in-out; }
 
 .btn-red:hover,
 .btn-red:active,
@@ -336,7 +336,7 @@ button {
   border-radius: 0px;
   font-size: 14px;
   font-size: 300;
-  transition: all 0.5s; }
+  transition: all 0.5s ease-in-out; }
 
 .btn-white:hover,
 .btn-white:active,
@@ -354,7 +354,7 @@ button {
   border-radius: 0px;
   font-size: 14px;
   font-weight: bold;
-  transition: all 0.5s; }
+  transition: all 0.5s ease-in-out; }
 
 .btn-red:hover,
 .btn-red:active,
@@ -501,7 +501,7 @@ body.has-active-menu {
   z-index: 1000000000; }
 
 .navbar-inverse .navbar-toggle {
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
   border: none; }
   .navbar-inverse .navbar-toggle:hover {
     background-color: transparent; }
@@ -573,7 +573,7 @@ body.has-active-menu {
   float: left;
   background-color: #ffffff;
   padding: 16px 20px;
-  transition: all 0.5s; }
+  transition: all 0.5s ease-in-out; }
   .mobile-search:hover {
     background-color: #BABCBE; }
     .mobile-search:hover svg path {
@@ -590,7 +590,7 @@ body.has-active-menu {
   .mobile-buy-now-menu .mobile-buy-now-save {
     background-color: #D62027;
     padding: 18px 0px 18px 95px;
-    transition: all 0.5s; }
+    transition: all 0.5s ease-in-out; }
     .mobile-buy-now-menu .mobile-buy-now-save h2 {
       margin: 0px;
       color: #ffffff;
@@ -630,7 +630,7 @@ body.has-active-menu {
   display: flex !important;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
   margin-right: 10px !important;
   margin-top: 20px !important; }
   .facebook svg, .twitter svg, .instagram svg, .pinterest svg {
@@ -746,7 +746,7 @@ body {
     padding: 16px 0;
     display: inline-block;
     font-weight: bold;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in-out;
     border-bottom: 2px solid transparent; }
     .site-switcher-section a:hover {
       color: #D62027 !important;
@@ -995,7 +995,7 @@ label {
   #callout a {
     color: #D62027;
     border-bottom: 1px dotted #D62027;
-    transition: all 0.5s; }
+    transition: all 0.5s ease-in-out; }
     #callout a:hover {
       color: #89070C;
       border-bottom: 1px dotted #89070C;
@@ -1172,7 +1172,7 @@ label {
     bottom: 0; } }
 .navbar {
   margin-bottom: 0px;
-  padding: 10px 0; }
+  padding: 10px 20px; }
 
 .navigation-links-section {
   float: right;
@@ -1203,7 +1203,7 @@ label {
         color: #D62027;
         text-decoration: none;
         border-bottom: 1px dotted #D62027;
-        transition: all 0.5s; }
+        transition: all 0.5s ease-in-out; }
         .hours-section ul li a:hover {
           color: #89070C;
           border-bottom-color: #89070C; }
@@ -1222,7 +1222,11 @@ label {
   height: 90px; }
 
 #search-icon {
-  height: 15px; }
+  height: 15px;
+  transition: all 0.5s ease-in-out;
+  fill: #BABCBE; }
+  #search-icon:hover {
+    fill: #D62027; }
 
 .navbar-lower .active-link {
   background-size: 140px 44px;
@@ -1239,7 +1243,7 @@ label {
   .navbar-lower li a strong {
     font-weight: 400; }
 .navbar-lower li > a {
-  transition: all 0.5s; }
+  transition: all 0.5s ease-in-out; }
   .navbar-lower li > a:hover {
     padding-bottom: 14px;
     white-space: nowrap; }
@@ -1280,7 +1284,7 @@ label {
 
 .navbar-inverse .navbar-nav > li > a {
   color: #231f20;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
   padding: 10px 0px;
   margin: 0px 15px; }
   .navbar-inverse .navbar-nav > li > a:after {
@@ -1316,11 +1320,15 @@ label {
 
 .navbar-inverse.nav-upper .navbar-upper > li {
   display: table-cell;
-  font-size: 14px; }
+  font-size: 14px;
+  letter-spacing: 1px; }
 
 .navbar-inverse.nav-upper .navbar-upper > li > a {
   color: #BABCBE;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.5s ease-in-out; }
+  .navbar-inverse.nav-upper .navbar-upper > li > a:hover {
+    color: #D62027; }
 
 @media (min-width: 768px) {
   .navbar.navbar-lower .navbar-nav {
@@ -1344,6 +1352,10 @@ label {
   top: 5px;
   left: 50px;
   z-index: 1; }
+  .navbar-logo img {
+    transition: all 0.5s ease-in-out; }
+    .navbar-logo img:hover {
+      opacity: 0.7; }
 
 .navbar-fixed-top .navbar-logo {
   padding-top: 10px !important; }
@@ -1426,7 +1438,7 @@ footer {
       footer .map-image address a {
         color: #D62027;
         border-bottom: 1px dotted #D62027;
-        transition: all 0.5s; }
+        transition: all 0.5s ease-in-out; }
         footer .map-image address a:hover {
           color: #89070C;
           border-bottom: 1px dotted #89070C;
@@ -1719,7 +1731,7 @@ sup {
           margin: auto 7px;
           color: #D62027;
           border-bottom: 1px dotted #D62027;
-          transition: all 0.5s; }
+          transition: all 0.5s ease-in-out; }
           .hero-section .jumbotron .homepage-slider-single div p a:hover {
             color: #89070C;
             border-bottom: 1px dotted #89070C;
@@ -1816,7 +1828,7 @@ sup {
     color: #D62027;
     border-bottom: 1px dotted #D62027;
     margin-right: 7px;
-    transition: all 0.5s; }
+    transition: all 0.5s ease-in-out; }
     .about-section .jumbotron a:hover {
       color: #89070C;
       border-bottom: 1px dotted #89070C;
@@ -1884,7 +1896,7 @@ sup {
       .mainpage-details-section .sub-detail p a {
         border-bottom: 1px dotted #ffffff;
         color: #ffffff;
-        transition: all 0.5s; }
+        transition: all 0.5s ease-in-out; }
         .mainpage-details-section .sub-detail p a:hover {
           color: #919396;
           border-bottom: 1px dotted #919396;
@@ -1935,7 +1947,7 @@ sup {
   margin-top: 50px; }
 
 .list-item-image a img {
-  transition: all 0.5s; }
+  transition: all 0.5s ease-in-out; }
 .list-item-image a:hover img {
   opacity: 0.7; }
 
