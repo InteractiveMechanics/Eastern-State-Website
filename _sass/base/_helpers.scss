@@ -72,6 +72,12 @@
 
 }
 */
+
+.btn {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
 .btn-white { 
   color: $scarlet; 
   background-color: #FFFFFF; 
@@ -316,4 +322,9 @@ ul.social-icons {
 .btn:focus {
 	outline: 5px auto $gray;
 	color: $scarlet;
+}
+
+.btn:active:focus {
+	outline: 5px auto $gray;
+	color: #ffffff;
 }

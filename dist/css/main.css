@@ -66,6 +66,10 @@
 
 }
 */
+.btn {
+  padding-left: 25px;
+  padding-right: 25px; }
+
 .btn-white {
   color: #D62027;
   background-color: #FFFFFF;
@@ -227,6 +231,10 @@ ul.social-icons {
 .btn:focus {
   outline: 5px auto #919396;
   color: #D62027; }
+
+.btn:active:focus {
+  outline: 5px auto #919396;
+  color: #ffffff; }
 
 body {
   font-family: "Roboto", Georgia, sans-serif; }
@@ -328,6 +336,10 @@ button {
 
 }
 */
+.btn {
+  padding-left: 25px;
+  padding-right: 25px; }
+
 .btn-white {
   color: #D62027;
   background-color: #FFFFFF;
@@ -489,6 +501,10 @@ ul.social-icons {
 .btn:focus {
   outline: 5px auto #919396;
   color: #D62027; }
+
+.btn:active:focus {
+  outline: 5px auto #919396;
+  color: #ffffff; }
 
 body.has-active-menu {
   overflow: hidden; }
@@ -1578,7 +1594,7 @@ input[type=radio]:focus {
   margin-left: -25px; }
 
 button[type='submit'] {
-  padding: 15px 20px;
+  padding: 15px 25px;
   font-weight: 300;
   font-family: 'roboto condensed';
   letter-spacing: 1px; }
@@ -2012,14 +2028,19 @@ sup {
 .search-page .search-box .btn {
   border-radius: 0px;
   height: 50px;
-  padding: 15px 20px;
   width: 20%; }
 
 .image-library-page .press-image {
   position: relative;
-  margin-bottom: 25px; }
+  margin-bottom: 10px; }
+  .image-library-page .press-image img {
+    transition: all 0.5s ease-in-out; }
+  .image-library-page .press-image > .overlay {
+    transition: all 0.5s ease-in-out; }
   .image-library-page .press-image:hover > .overlay {
     background: #D62027; }
+  .image-library-page .press-image:hover img {
+    opacity: 0.7; }
 .image-library-page .overlay {
   position: absolute;
   bottom: 0;
@@ -2042,7 +2063,8 @@ sup {
   .image-library-page .bootstrap-select {
     width: 90% !important; } }
 .image-library-page .bootstrap-select .dropdown-toggle {
-  height: 50px; }
+  height: 50px;
+  font-size: 16px; }
   .image-library-page .bootstrap-select .dropdown-toggle:focus {
     outline: 5px auto #919396 !important; }
 .image-library-page .filter-row {
