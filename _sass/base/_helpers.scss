@@ -146,6 +146,9 @@ hr {
 
         .modal-body {
           padding: 0 60px 60px;
+          @include screen-xxs {
+	          padding: 0 30px 30px;
+          }
         }
     }
 

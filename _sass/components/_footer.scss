@@ -55,6 +55,10 @@ footer {
     		height: initial;
     		flex: 1;
     	}
+    	@include screen-md {
+	    	height: auto;
+    	}
+   
 
     	img {
     		margin-bottom:20px;
@@ -103,6 +107,9 @@ footer {
     	@include screen-sm {
     		height: initial;
     		flex: 1;
+    	}
+    	@include screen-md {
+	    	height: auto;
     	}
 
     	h2 {

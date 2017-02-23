@@ -93,3 +93,9 @@
     @content;
   }
 }
+
+@mixin screen-gtxl {
+	@media (#{$screen-gtxl}) {
+		@content;
+	}
+}

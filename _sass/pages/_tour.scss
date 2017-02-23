@@ -63,6 +63,9 @@
 		padding: 15px 30px 30px 30px;
 		height: 275px;
 		overflow-x: scroll;
+		@include screen-gtxl {
+			height: 375px;
+		}
 
 	}
 }
