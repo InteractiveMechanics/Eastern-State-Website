@@ -1990,6 +1990,13 @@ sup {
       .tour-page .modal, .tour-page .modal-backdrop {
         position: relative !important;
         padding-right: 0px !important; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .tour-page .modal, .tour-page .modal-backdrop {
+        position: relative !important;
+        padding-right: 0px !important; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .tour-page .modal, .tour-page .modal-backdrop {
+        height: 95%; } }
   .tour-page .modal-dialog {
     width: 33%;
     float: right;
@@ -1999,6 +2006,14 @@ sup {
       .tour-page .modal-dialog {
         width: 100%;
         right: 0px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .tour-page .modal-dialog {
+        width: 100%;
+        right: 0px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .tour-page .modal-dialog {
+        right: 30px;
+        width: 30%; } }
   .tour-page .modal-body {
     padding: 0px;
     /*

@@ -21,6 +21,14 @@
     		position: relative !important;
     		padding-right: 0px !important;
     	}
+    	@include screen-sm {
+	    	position: relative !important;
+    		padding-right: 0px !important;
+    	}
+    	@include screen-md {
+	    	height: 95%;
+    	}
+    	
 	}
 	.modal-dialog {
 		width: 33%;
@@ -30,6 +38,14 @@
 		@include screen-xs {
 			width: 100%;
 			right: 0px;
+		}
+		@include screen-sm {
+			width: 100%;
+			right: 0px;
+		}
+		@include screen-md {
+			right: 30px;
+			width: 30%;
 		}
 	}
 
