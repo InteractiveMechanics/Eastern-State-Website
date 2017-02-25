@@ -54,9 +54,9 @@ body {
     
     address {
         color: white;
-		font-size: 16px;
+		font-size: 14px;
 		font-weight: 300;
-		line-height: 26px;
+		line-height: 1.6;
 		
     }
 
@@ -100,6 +100,7 @@ body {
 
     > ul {
         margin-bottom: 25px;
+        display: flex;
         
         > li {
             border-bottom: 1px solid #ddd;
@@ -110,6 +111,7 @@ body {
 
 .mobile-menu-address-wrapper {
     background-color: $indigo;
+    height: 100%;
 }
 
 .mobile-label-links {
@@ -234,10 +236,12 @@ body {
 
 .hours-wrapper {
    float: left;
-    width: 50%;
-    font-weight: 300;
+    width: 48%;
     height: 50px;
+    font-weight: 300;
     color: #ffffff;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 
