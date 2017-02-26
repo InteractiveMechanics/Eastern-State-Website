@@ -23,4 +23,24 @@
 		padding: 15px 20px;
 	}
 	
+	.list-item-image {
+		@include screen-ltmd {
+			height: 250px;
+			margin-bottom: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+		@include screen-xxs {
+			height: 175px;
+		}
+		img {
+			@include screen-ltmd {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	
 }

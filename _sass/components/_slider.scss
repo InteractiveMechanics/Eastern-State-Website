@@ -7,8 +7,11 @@
 	@include screen-ltmd {
 		bottom: 15px;
 	}
+	@include screen-sm {
+		right: 440px;
+	}
 	@include screen-xs {
-		right: 62%;
+		left: 0px;
 	}
 	@include screen-xxs {
 		right: initial;

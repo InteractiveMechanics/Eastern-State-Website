@@ -10,6 +10,10 @@
 			padding: 60px 30px;
 			height: 100%;
 		}
+		@include screen-xxs {
+			padding: 60px 0px;
+			overflow: hidden;
+		}
 	}
 
 	.modal, .modal-backdrop {
@@ -88,6 +92,11 @@
 
 #prison-map {
 	width: 100%;
+	@include screen-xxs {
+		width: 120%;
+		position: relative;
+		right: 20px;
+	}
 }
 
 .marker {

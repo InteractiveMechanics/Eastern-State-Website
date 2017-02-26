@@ -1,6 +1,9 @@
 .navbar {
 	margin-bottom:0px;	
 	padding:10px 20px;
+	@include screen-xs {
+		padding: 10px 0px;
+	}
 }
 
 .navigation-links-section {
@@ -10,10 +13,13 @@
 
 .navbar-toggle {
 	border: none !important;
-     
+  
 	.icon-bar {
 		width: 30px;
 		height: 4px;
+	}
+	@include screen-xs {
+		margin-right: 0px;
 	}
 }
 

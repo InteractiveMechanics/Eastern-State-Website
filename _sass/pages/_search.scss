@@ -25,12 +25,18 @@
 			border-radius:0px;
 			height: 50px;
 			width: 90% !important;
+			@include screen-xxs {
+				width: 87% !important;
+			}
 		}
 
 		.btn {
 			border-radius:0px;
 			height: 50px;
 			width: 20%;
+			@include screen-xxs {
+				width: 36%;
+			}
 		}
 	}	
 }

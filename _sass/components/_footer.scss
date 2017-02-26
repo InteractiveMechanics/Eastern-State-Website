@@ -18,7 +18,8 @@ footer {
 	.col-sm-12 {
 		display: flex;
 		@include screen-xs {
-			display: initial;
+			flex-direction: column;
+			padding: 0px;
 		}
 	}
 	
@@ -49,7 +50,9 @@ footer {
     		width: 100%;
     		min-height: 100%;
     		margin-left: 0px;
-    		margin-bottom: 15px;
+    		order: 2;
+    		margin-top: 15px;
+    		
     	}
     	@include screen-sm {
     		height: initial;
@@ -101,8 +104,10 @@ footer {
     	width: calc(50% + 15px);
     	@include screen-xs {
     		width: 100%;
-    		height: 100%;
+    		height: auto;
     		margin-right: 0px;
+    		margin-top: 15px;
+    		order: 1;
     	}
     	@include screen-sm {
     		height: initial;

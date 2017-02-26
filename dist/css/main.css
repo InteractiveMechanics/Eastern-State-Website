@@ -561,6 +561,15 @@ body {
   @media (max-width: 991px) {
     .subpage-hero-section .breadcrumb {
       margin-bottom: 5px; } }
+  @media (max-width: 480px) {
+    .subpage-hero-section .breadcrumb .active {
+      position: relative;
+      left: -10px; }
+      .subpage-hero-section .breadcrumb .active:before {
+        content: ''; } }
+  @media (max-width: 480px) {
+    .subpage-hero-section .breadcrumb li {
+      display: block; } }
   .subpage-hero-section .breadcrumb li:first-child a {
     padding-bottom: 4px;
     white-space: nowrap;
@@ -626,10 +635,20 @@ body {
   height: 446px;
   position: relative;
   padding: 65px 105px; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .subpage-hero-section .subpage-hero-details {
+      padding: 50px; } }
   @media (max-width: 991px) {
     .subpage-hero-section .subpage-hero-details {
-      padding: 50px 30px;
+      padding: 50px 15px 50px 30px;
       height: 250px; } }
+  @media (max-width: 767px) {
+    .subpage-hero-section .subpage-hero-details {
+      padding: 50px 30px;
+      height: 300px; } }
+  @media (max-width: 480px) {
+    .subpage-hero-section .subpage-hero-details {
+      padding: 20px; } }
   .subpage-hero-section .subpage-hero-details section {
     position: absolute;
     bottom: 100px; }
@@ -641,6 +660,9 @@ body {
         flex-direction: column;
         height: 100%;
         justify-content: flex-end; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .subpage-hero-section .subpage-hero-details section {
+        bottom: 50px; } }
 
 .main-content-subpages {
   margin-bottom: 50px; }
@@ -991,6 +1013,9 @@ label {
 .navbar {
   margin-bottom: 0px;
   padding: 10px 20px; }
+  @media (max-width: 767px) {
+    .navbar {
+      padding: 10px 0px; } }
 
 .navigation-links-section {
   float: right;
@@ -1001,6 +1026,9 @@ label {
   .navbar-toggle .icon-bar {
     width: 30px;
     height: 4px; }
+  @media (max-width: 767px) {
+    .navbar-toggle {
+      margin-right: 0px; } }
 
 .dropdown-menu {
   border: none; }
@@ -1211,7 +1239,8 @@ footer {
     display: flex; }
     @media (max-width: 767px) {
       footer .col-sm-12 {
-        display: initial; } }
+        flex-direction: column;
+        padding: 0px; } }
   footer .footer-detail {
     padding: 30px;
     margin: 0;
@@ -1236,7 +1265,8 @@ footer {
         width: 100%;
         min-height: 100%;
         margin-left: 0px;
-        margin-bottom: 15px; } }
+        order: 2;
+        margin-top: 15px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       footer .map-image {
         height: initial;
@@ -1277,8 +1307,10 @@ footer {
     @media (max-width: 767px) {
       footer .newsletter-signup {
         width: 100%;
-        height: 100%;
-        margin-right: 0px; } }
+        height: auto;
+        margin-right: 0px;
+        margin-top: 15px;
+        order: 1; } }
     @media (min-width: 768px) and (max-width: 991px) {
       footer .newsletter-signup {
         height: initial;
@@ -1454,9 +1486,12 @@ sup {
   @media (max-width: 991px) {
     .slick-dots {
       bottom: 15px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .slick-dots {
+      right: 440px; } }
   @media (max-width: 767px) {
     .slick-dots {
-      right: 62%; } }
+      left: 0px; } }
   @media (max-width: 480px) {
     .slick-dots {
       right: initial;
@@ -1752,6 +1787,21 @@ sup {
   margin-top: 0px; }
 .listview-page .btn-white {
   padding: 15px 20px; }
+@media (max-width: 991px) {
+  .listview-page .list-item-image {
+    height: 250px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; } }
+@media (max-width: 480px) {
+  .listview-page .list-item-image {
+    height: 175px; } }
+@media (max-width: 991px) {
+  .listview-page .list-item-image img {
+    width: 100%;
+    height: auto; } }
 
 .press-page ul li {
   margin-bottom: 65px; }
@@ -1839,10 +1889,16 @@ sup {
   border-radius: 0px;
   height: 50px;
   width: 90% !important; }
+  @media (max-width: 480px) {
+    .search-page .search-box input {
+      width: 87% !important; } }
 .search-page .search-box .btn {
   border-radius: 0px;
   height: 50px;
   width: 20%; }
+  @media (max-width: 480px) {
+    .search-page .search-box .btn {
+      width: 36%; } }
 
 .image-library-page .press-image {
   position: relative;
@@ -2017,6 +2073,10 @@ sup {
       .tour-page .padded-box {
         padding: 60px 30px;
         height: 100%; } }
+    @media (max-width: 480px) {
+      .tour-page .padded-box {
+        padding: 60px 0px;
+        overflow: hidden; } }
   .tour-page .modal, .tour-page .modal-backdrop {
     position: absolute !important;
     left: auto;
@@ -2079,6 +2139,11 @@ sup {
 
 #prison-map {
   width: 100%; }
+  @media (max-width: 480px) {
+    #prison-map {
+      width: 120%;
+      position: relative;
+      right: 20px; } }
 
 .marker {
   z-index: 1053;
