@@ -128,39 +128,7 @@ hr {
   border-color: $gray;
 }
 
-.press-modal {
-    h3 {
-      margin-top:0px;
-    }
-    
-    .modal-dialog {
-      width:950px;
-    }
 
-    .modal-header {
-      border-bottom: none;
-    }
-    .modal-content {
-        box-shadow:none;
-        border-radius:0px;
-
-        .modal-body {
-          padding: 0 60px 60px;
-          @include screen-xxs {
-	          padding: 0 30px 30px;
-          }
-        }
-    }
-
-    .caption {
-      margin-top:25px;
-      p {
-        line-height:25px;
-        font-size:15px;
-        margin-bottom:20px;
-      }
-    }
-}
 
 @media screen and ($screen-sm) {
   
